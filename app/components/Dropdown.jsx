@@ -13,6 +13,7 @@ export function Dropdown({
   panelClass = "",
   panelWidth = 180,
   showCaret = true,
+  triggerClassName = "",
 }) {
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState({ top: 0, left: 0, ready: false });
@@ -72,15 +73,23 @@ export function Dropdown({
         onClick={() => setOpen((v) => !v)}
         title={title}
         className={
+          triggerClassName ||
           "inline-flex shrink-0 items-center gap-0.5 rounded-md border px-2 py-1.5 text-sm font-medium transition-colors " +
-          "hover:bg-zinc-100 dark:hover:bg-zinc-800 " +
-          (active
-            ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
-            : "border-zinc-200 bg-white text-zinc-800 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100")
+            "hover:bg-zinc-100 dark:hover:bg-zinc-800 " +
+            (active
+              ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
+              : "border-zinc-200 bg-white text-zinc-800 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100")
         }
       >
         {label}
-        {showCaret && <ChevronDown className="h-3.5 w-3.5 opacity-70" />}
+        {showCaret && (
+          <ChevronDown
+            className={
+              "h-3.5 w-3.5 opacity-70 " +
+              (triggerClassName ? "ml-1" : "")
+            }
+          />
+        )}
       </button>
       {open &&
         typeof document !== "undefined" &&

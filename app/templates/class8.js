@@ -7,9 +7,14 @@ export const class8 = {
       title: "বাংলা — সৃজনশীল প্রশ্ন",
       subject: "বাংলা",
       html: `
-        <h2 style="text-align:center;">অষ্টম শ্রেণি — বাংলা</h2>
-        <h3 style="text-align:center;">সৃজনশীল প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -32,9 +37,14 @@ export const class8 = {
       title: "গণিত — বীজগণিত",
       subject: "গণিত",
       html: `
-        <h2 style="text-align:center;">অষ্টম শ্রেণি — গণিত</h2>
-        <h3 style="text-align:center;">বীজগণিত — অনুশীলনী</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১৫ | সময়: ৩০ মিনিট</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>বীজগণিত — অনুশীলনী</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ৩০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১৫</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>সমাধান করো: ৩x + ৫ = ২০</li>
@@ -51,9 +61,14 @@ export const class8 = {
       title: "বিজ্ঞান — সংক্ষিপ্ত প্রশ্ন",
       subject: "বিজ্ঞান",
       html: `
-        <h2 style="text-align:center;">অষ্টম শ্রেণি — বিজ্ঞান</h2>
-        <h3 style="text-align:center;">সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</h3>
-        <p style="text-align:center;"><em>প্রতিটি প্রশ্নের মান: ৩</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ৩০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১৫ <span style="font-weight:normal;">(প্রতিটি ৩)</span></span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>পদার্থের অবস্থা কত প্রকার ও কী কী?</li>

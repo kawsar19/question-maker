@@ -7,9 +7,14 @@ export const class7 = {
       title: "বাংলা — সৃজনশীল প্রশ্ন",
       subject: "বাংলা",
       html: `
-        <h2 style="text-align:center;">সপ্তম শ্রেণি — বাংলা</h2>
-        <h3 style="text-align:center;">সৃজনশীল প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০ | সময়: ২৫ মিনিট</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -32,9 +37,14 @@ export const class7 = {
       title: "বিজ্ঞান — বহুনির্বাচনী",
       subject: "বিজ্ঞান",
       html: `
-        <h2 style="text-align:center;">সপ্তম শ্রেণি — বিজ্ঞান</h2>
-        <h3 style="text-align:center;">বহুনির্বাচনী প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -81,9 +91,14 @@ export const class7 = {
       title: "ইসলাম ও নৈতিক শিক্ষা — রচনামূলক",
       subject: "ইসলাম ও নৈতিক শিক্ষা",
       html: `
-        <h2 style="text-align:center;">সপ্তম শ্রেণি — ইসলাম ও নৈতিক শিক্ষা</h2>
-        <h3 style="text-align:center;">রচনামূলক প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ২০</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> ইসলাম ও নৈতিক শিক্ষা</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>রচনামূলক প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ৪৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ২০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>

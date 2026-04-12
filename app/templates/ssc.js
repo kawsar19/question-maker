@@ -7,9 +7,14 @@ export const ssc = {
       title: "বাংলা প্রথম পত্র — সৃজনশীল",
       subject: "বাংলা প্রথম পত্র",
       html: `
-        <h2 style="text-align:center;">নবম-দশম শ্রেণি — বাংলা প্রথম পত্র</h2>
-        <h3 style="text-align:center;">সৃজনশীল প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০ | সময়: ২৫ মিনিট</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা প্রথম পত্র</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -32,9 +37,14 @@ export const ssc = {
       title: "পদার্থবিজ্ঞান — বহুনির্বাচনী",
       subject: "পদার্থবিজ্ঞান",
       html: `
-        <h2 style="text-align:center;">নবম-দশম শ্রেণি — পদার্থবিজ্ঞান</h2>
-        <h3 style="text-align:center;">বহুনির্বাচনী প্রশ্ন</h3>
-        <p style="text-align:center;"><em>প্রতিটি প্রশ্নের মান: ১</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> পদার্থবিজ্ঞান</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ৫ <span style="font-weight:normal;">(প্রতিটি ১)</span></span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -90,9 +100,14 @@ export const ssc = {
       title: "রসায়ন — সৃজনশীল",
       subject: "রসায়ন",
       html: `
-        <h2 style="text-align:center;">নবম-দশম শ্রেণি — রসায়ন</h2>
-        <h3 style="text-align:center;">সৃজনশীল প্রশ্ন</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> রসায়ন</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২৫ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>

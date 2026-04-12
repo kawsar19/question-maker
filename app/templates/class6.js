@@ -7,9 +7,14 @@ export const class6 = {
       title: "বাংলা — বহুনির্বাচনী প্রশ্ন",
       subject: "বাংলা",
       html: `
-        <h2 style="text-align:center;">ষষ্ঠ শ্রেণি — বাংলা</h2>
-        <h3 style="text-align:center;">বহুনির্বাচনী প্রশ্ন (MCQ)</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০ | সময়: ২০ মিনিট</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ২০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -56,9 +61,14 @@ export const class6 = {
       title: "বাংলাদেশ ও বিশ্বপরিচয় — সংক্ষিপ্ত",
       subject: "বাংলাদেশ ও বিশ্বপরিচয়",
       html: `
-        <h2 style="text-align:center;">ষষ্ঠ শ্রেণি — বাংলাদেশ ও বিশ্বপরিচয়</h2>
-        <h3 style="text-align:center;">সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</h3>
-        <p style="text-align:center;"><em>প্রতিটি প্রশ্নের মান: ২ | সময়: ৩০ মিনিট</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলাদেশ ও বিশ্বপরিচয়</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ৩০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১২ <span style="font-weight:normal;">(প্রতিটি ২)</span></span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>মুক্তিযুদ্ধ কী?</li>
@@ -75,9 +85,14 @@ export const class6 = {
       title: "গণিত — অনুশীলনী",
       subject: "গণিত",
       html: `
-        <h2 style="text-align:center;">ষষ্ঠ শ্রেণি — গণিত</h2>
-        <h3 style="text-align:center;">অনুশীলনী ১.১</h3>
-        <p style="text-align:center;"><em>পূর্ণমান: ১০</em></p>
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
+        <p style="text-align:center;margin:0.2em 0;"><em>অনুশীলনী ১.১</em></p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
+          <span><strong>সময়:</strong> ৩০ মিনিট</span>
+          <span><strong>পূর্ণমান:</strong> ১০</span>
+        </p>
         <hr />
         <ol class="bn-digits-list">
           <li>যোগ করো: ৪৫৬ + ২৭৮ + ১২৯</li>
