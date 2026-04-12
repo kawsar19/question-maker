@@ -96,12 +96,18 @@ export default function Editor() {
     editor.commands.focus("end");
   };
 
+  const insertBlock = (html) => {
+    if (!editor) return;
+    editor.chain().focus().insertContent(html).run();
+  };
+
   return (
     <div className="w-full">
-      <div className="overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
+      <div className="rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
         <Toolbar
           editor={editor}
           onOpenTemplates={() => setTemplateOpen(true)}
+          onInsertBlock={insertBlock}
         />
         <EditorContent editor={editor} />
       </div>
