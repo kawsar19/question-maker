@@ -7,6 +7,8 @@ import StarterKit from "@tiptap/starter-kit";
 import Link from "@tiptap/extension-link";
 import Placeholder from "@tiptap/extension-placeholder";
 import TextAlign from "@tiptap/extension-text-align";
+import { TextStyle } from "@tiptap/extension-text-style";
+import { FontFamily } from "@tiptap/extension-font-family";
 import Toolbar from "./Toolbar";
 import TemplateModal from "./TemplateModal";
 
@@ -72,6 +74,10 @@ export default function Editor() {
       }),
       TextAlign.configure({
         types: ["heading", "paragraph"],
+      }),
+      TextStyle,
+      FontFamily.configure({
+        types: ["textStyle"],
       }),
     ],
     content: initialContent,

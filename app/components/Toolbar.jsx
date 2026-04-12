@@ -29,6 +29,7 @@ import {
   FileText,
   MoreHorizontal,
   Languages,
+  Type,
 } from "lucide-react";
 import BlockInsertDropdown from "./BlockInsertDropdown";
 import {
@@ -103,6 +104,30 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
   const listClass = editor.isActive("orderedList")
     ? editor.getAttributes("orderedList").class
     : null;
+
+  const FONTS = [
+    { label: "Kalpurush", value: "Kalpurush, sans-serif", bangla: true },
+    {
+      label: "SolaimanLipi",
+      value: "SolaimanLipi, sans-serif",
+      bangla: true,
+    },
+    {
+      label: "Siyam Rupali",
+      value: '"Siyam Rupali", sans-serif',
+      bangla: true,
+    },
+    { label: "Nikosh", value: "Nikosh, sans-serif", bangla: true },
+    { label: "System Sans", value: "system-ui, sans-serif", bangla: false },
+    { label: "Serif", value: "Georgia, serif", bangla: false },
+    { label: "Monospace", value: "ui-monospace, monospace", bangla: false },
+  ];
+
+  const currentFont = editor.getAttributes("textStyle").fontFamily;
+  const currentFontLabel = currentFont
+    ? (FONTS.find((f) => f.value === currentFont)?.label ??
+      currentFont.split(",")[0].replace(/['"]/g, "").trim())
+    : "Kalpurush";
 
   const headingActive =
     (editor.isActive("heading", { level: 1 }) && "h1") ||
@@ -188,6 +213,53 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
         >
           Paragraph
         </DropdownItem>
+      </Dropdown>
+
+      {/* Font family */}
+      <Dropdown
+        title="Font family"
+        label={
+          <span className="inline-flex items-center gap-1">
+            <Type className="h-4 w-4" />
+            <span className="hidden max-w-[7rem] truncate sm:inline">
+              {currentFontLabel}
+            </span>
+          </span>
+        }
+        active={!!currentFont}
+        panelWidth={200}
+      >
+        <DropdownLabel>বাংলা ফন্ট</DropdownLabel>
+        <DropdownItem
+          active={!currentFont}
+          onClick={() => editor.chain().focus().unsetFontFamily().run()}
+        >
+          Kalpurush (ডিফল্ট)
+        </DropdownItem>
+        {FONTS.filter((f) => f.bangla && f.label !== "Kalpurush").map((f) => (
+          <DropdownItem
+            key={f.value}
+            active={currentFont === f.value}
+            onClick={() =>
+              editor.chain().focus().setFontFamily(f.value).run()
+            }
+          >
+            <span style={{ fontFamily: f.value }}>{f.label}</span>
+          </DropdownItem>
+        ))}
+        <DropdownDivider />
+        <DropdownLabel>অন্যান্য</DropdownLabel>
+        {FONTS.filter((f) => !f.bangla).map((f) => (
+          <DropdownItem
+            key={f.value}
+            active={currentFont === f.value}
+            onClick={() =>
+              editor.chain().focus().setFontFamily(f.value).run()
+            }
+          >
+            <span style={{ fontFamily: f.value }}>{f.label}</span>
+          </DropdownItem>
+        ))}
       </Dropdown>
 
       {/* Bold / Italic */}

@@ -1,8 +1,53 @@
 @import "tailwindcss";
 
+/* Local Kalpurush + other Bangla web fonts via jsDelivr (maateen/bangla-web-fonts) */
+@font-face {
+  font-family: "Kalpurush";
+  src: url("/fonts/kalpurush.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SolaimanLipi";
+  src: url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/solaimanlipi/solaimanlipi.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/solaimanlipi/solaimanlipi.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Siyam Rupali";
+  src: url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/siyamrupali/siyamrupali.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/siyamrupali/siyamrupali.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nikosh";
+  src: url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/nikosh/nikosh.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/maateen/bangla-web-fonts@master/fonts/nikosh/nikosh.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-bangla:
+    "Kalpurush", "SolaimanLipi", "Siyam Rupali", "Noto Sans Bengali",
+    sans-serif;
 }
 
 @theme inline {
@@ -35,6 +80,12 @@ body {
 }
 
 /* Tiptap editor styles */
+.tiptap {
+  font-family: var(--font-bangla);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
 .tiptap :first-child {
   margin-top: 0;
 }
