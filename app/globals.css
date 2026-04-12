@@ -24,3 +24,123 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Tiptap editor styles */
+.tiptap :first-child {
+  margin-top: 0;
+}
+
+.tiptap h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.tiptap h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 1.15rem 0 0.65rem;
+}
+
+.tiptap h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 1rem 0 0.5rem;
+}
+
+.tiptap p {
+  line-height: 1.65;
+  margin: 0.5rem 0;
+}
+
+.tiptap ul,
+.tiptap ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.tiptap ul {
+  list-style: disc;
+}
+
+.tiptap ol {
+  list-style: decimal;
+}
+
+.tiptap li > p {
+  margin: 0.15rem 0;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid rgb(212 212 216);
+  padding-left: 1rem;
+  margin: 0.75rem 0;
+  color: rgb(82 82 91);
+  font-style: italic;
+}
+
+.tiptap code {
+  background: rgb(244 244 245);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.tiptap pre {
+  background: rgb(24 24 27);
+  color: rgb(244 244 245);
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+  margin: 0.75rem 0;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+}
+
+.tiptap pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.tiptap hr {
+  border: none;
+  border-top: 1px solid rgb(228 228 231);
+  margin: 1.25rem 0;
+}
+
+.tiptap a {
+  color: rgb(37 99 235);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+/* Placeholder */
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: rgb(161 161 170);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tiptap blockquote {
+    border-color: rgb(63 63 70);
+    color: rgb(161 161 170);
+  }
+
+  .tiptap code {
+    background: rgb(39 39 42);
+  }
+
+  .tiptap hr {
+    border-color: rgb(63 63 70);
+  }
+}
