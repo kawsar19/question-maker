@@ -26,6 +26,16 @@ const StylePreserve = Extension.create({
           },
         },
       },
+      {
+        types: ["orderedList", "bulletList"],
+        attributes: {
+          class: {
+            default: null,
+            parseHTML: (el) => el.getAttribute("class"),
+            renderHTML: (attrs) => (attrs.class ? { class: attrs.class } : {}),
+          },
+        },
+      },
     ];
   },
 });

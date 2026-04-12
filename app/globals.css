@@ -56,22 +56,108 @@ body {
   margin: 0.5rem 0;
 }
 
-.tiptap ul,
-.tiptap ol {
-  padding-left: 1.5rem;
-  margin: 0.5rem 0;
+/* Custom counter styles with explicit Bengali symbols */
+@counter-style bn-digits {
+  system: numeric;
+  symbols: "\09E6" "\09E7" "\09E8" "\09E9" "\09EA" "\09EB" "\09EC" "\09ED" "\09EE" "\09EF";
+  suffix: "। ";
 }
 
+@counter-style bn-letters {
+  system: alphabetic;
+  symbols: "\0995" "\0996" "\0997" "\0998" "\0999" "\099A" "\099B" "\099C" "\099D" "\099E"
+           "\099F" "\09A0" "\09A1" "\09A2" "\09A3" "\09A4" "\09A5" "\09A6" "\09A7" "\09A8"
+           "\09AA" "\09AB" "\09AC" "\09AD" "\09AE" "\09AF" "\09B0" "\09B2" "\09B6" "\09B7"
+           "\09B8" "\09B9";
+  suffix: ") ";
+}
+
+/* Default lists (browser decimal / disc) */
 .tiptap ul {
   list-style: disc;
+  padding-left: 1.75rem;
+  margin: 0.5rem 0;
 }
 
 .tiptap ol {
   list-style: decimal;
+  padding-left: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+/* Bangla digit list: ১। ২। ৩। ... */
+.tiptap ol.bn-digits-list,
+.tiptap ol.bangla-list,
+ol.bn-digits-list,
+ol.bangla-list {
+  list-style: none !important;
+  counter-reset: bn-li;
+  padding-left: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.tiptap ol.bn-digits-list > li,
+.tiptap ol.bangla-list > li,
+ol.bn-digits-list > li,
+ol.bangla-list > li {
+  counter-increment: bn-li;
+  position: relative;
+  margin: 0.35rem 0;
+  list-style: none;
+}
+
+.tiptap ol.bn-digits-list > li::before,
+.tiptap ol.bangla-list > li::before,
+ol.bn-digits-list > li::before,
+ol.bangla-list > li::before {
+  content: counter(bn-li, bn-digits) "। ";
+  font-weight: 600;
+  position: absolute;
+  left: -2.25rem;
+  top: 0;
+  min-width: 2rem;
+  text-align: right;
+  padding-right: 0.25rem;
+}
+
+/* Bangla letter list: ক) খ) গ) ঘ) ... */
+.tiptap ol.bn-letters-list,
+ol.bn-letters-list {
+  list-style: none !important;
+  counter-reset: bn-letter;
+  padding-left: 2.25rem;
+  margin: 0.35rem 0;
+}
+
+.tiptap ol.bn-letters-list > li,
+ol.bn-letters-list > li {
+  counter-increment: bn-letter;
+  position: relative;
+  margin: 0.2rem 0;
+  list-style: none;
+}
+
+.tiptap ol.bn-letters-list > li::before,
+ol.bn-letters-list > li::before {
+  content: counter(bn-letter, bn-letters) ") ";
+  font-weight: 600;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  min-width: 1.75rem;
+  text-align: right;
+  padding-right: 0.25rem;
 }
 
 .tiptap li > p {
   margin: 0.15rem 0;
+}
+
+.tiptap li > p:first-child,
+.bn-digits-list > li > p:first-child,
+.bn-letters-list > li > p:first-child,
+.bangla-list > li > p:first-child {
+  margin-top: 0;
 }
 
 .tiptap blockquote {

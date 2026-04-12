@@ -39,6 +39,31 @@ export default function Toolbar({ editor, onOpenTemplates }) {
     editor.chain().focus().extendMarkRange("link").setLink({ href: url }).run();
   };
 
+  const toggleOrderedListClass = (className) => {
+    const inList = editor.isActive("orderedList");
+    const current = inList ? editor.getAttributes("orderedList").class : null;
+    if (inList && current === className) {
+      editor.chain().focus().toggleOrderedList().run();
+    } else if (inList) {
+      editor
+        .chain()
+        .focus()
+        .updateAttributes("orderedList", { class: className })
+        .run();
+    } else {
+      editor
+        .chain()
+        .focus()
+        .toggleOrderedList()
+        .updateAttributes("orderedList", { class: className })
+        .run();
+    }
+  };
+
+  const listClass = editor.isActive("orderedList")
+    ? editor.getAttributes("orderedList").class
+    : null;
+
   return (
     <div className="flex flex-wrap items-center gap-1 rounded-t-xl border border-b-0 border-zinc-200 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-900/60">
       {onOpenTemplates && (
@@ -125,10 +150,28 @@ export default function Toolbar({ editor, onOpenTemplates }) {
       </Button>
       <Button
         onClick={() => editor.chain().focus().toggleOrderedList().run()}
-        active={editor.isActive("orderedList")}
-        title="Ordered list"
+        active={editor.isActive("orderedList") && !listClass}
+        title="Ordered list (1. 2. 3.)"
       >
         1. List
+      </Button>
+      <Button
+        onClick={() =>
+          editor.chain().focus().sinkListItem("listItem").run()
+        }
+        disabled={!editor.can().sinkListItem("listItem")}
+        title="Indent / নেস্ট (Tab) — নির্বাচিত list item-গুলো আরও ভিতরে"
+      >
+        ⇥
+      </Button>
+      <Button
+        onClick={() =>
+          editor.chain().focus().liftListItem("listItem").run()
+        }
+        disabled={!editor.can().liftListItem("listItem")}
+        title="Outdent / বাইরে (Shift+Tab)"
+      >
+        ⇤
       </Button>
       <Button
         onClick={() => editor.chain().focus().toggleBlockquote().run()}
@@ -222,6 +265,29 @@ export default function Toolbar({ editor, onOpenTemplates }) {
       >
         Clear
       </Button>
+
+      <Divider />
+
+      {/* Bangla formatting group */}
+      <div className="flex items-center gap-1 rounded-md border border-emerald-300 bg-emerald-50 px-1.5 py-0.5 dark:border-emerald-800 dark:bg-emerald-950/40">
+        <span className="px-1 text-xs font-semibold text-emerald-800 dark:text-emerald-200">
+          বাংলা
+        </span>
+        <Button
+          onClick={() => toggleOrderedListClass("bn-digits-list")}
+          active={listClass === "bn-digits-list"}
+          title="বাংলা সংখ্যা তালিকা (১। ২। ৩।)"
+        >
+          ১। তালিকা
+        </Button>
+        <Button
+          onClick={() => toggleOrderedListClass("bn-letters-list")}
+          active={listClass === "bn-letters-list"}
+          title="বাংলা অক্ষর তালিকা (ক) খ) গ) ঘ))"
+        >
+          ক) তালিকা
+        </Button>
+      </div>
     </div>
   );
 }
