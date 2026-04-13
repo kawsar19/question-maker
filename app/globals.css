@@ -213,6 +213,46 @@ ol.bn-letters-list > li::before {
   margin: 0.15rem 0;
 }
 
+/* Question-paper tables: bordered grid cells */
+.tiptap table,
+.tiptap table.q-table {
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  table-layout: fixed;
+}
+
+.tiptap table td,
+.tiptap table th {
+  border: 1.5px solid #1f2937;
+  padding: 0.35rem 0.75rem;
+  min-width: 2.25rem;
+  min-height: 1.75rem;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.tiptap table th {
+  background: #f4f4f5;
+  font-weight: 700;
+}
+
+.tiptap table p {
+  margin: 0;
+}
+
+.tiptap table .selectedCell::after {
+  background: rgba(59, 130, 246, 0.15);
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
 .tiptap li > p:first-child,
 .bn-digits-list > li > p:first-child,
 .bn-letters-list > li > p:first-child,

@@ -30,6 +30,18 @@ import {
   MoreHorizontal,
   Languages,
   Type,
+  ALargeSmall,
+  Rows3,
+  Table as TableIcon,
+  Grid3x3,
+  RowsIcon,
+  Columns3,
+  Trash2,
+  ArrowUp,
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  Heading as HeadingRowIcon,
 } from "lucide-react";
 import BlockInsertDropdown from "./BlockInsertDropdown";
 import {
@@ -129,6 +141,32 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
       currentFont.split(",")[0].replace(/['"]/g, "").trim())
     : "Kalpurush";
 
+  const FONT_SIZES = [
+    "12px",
+    "14px",
+    "16px",
+    "18px",
+    "20px",
+    "24px",
+    "28px",
+    "32px",
+    "36px",
+  ];
+  const currentFontSize = editor.getAttributes("textStyle").fontSize || null;
+
+  const LINE_HEIGHTS = [
+    { label: "১.০ (টাইট)", value: "1" },
+    { label: "১.১৫", value: "1.15" },
+    { label: "১.৫", value: "1.5" },
+    { label: "১.৭৫", value: "1.75" },
+    { label: "২.০ (ডাবল)", value: "2" },
+    { label: "২.৫", value: "2.5" },
+  ];
+  const currentLineHeight =
+    editor.getAttributes("paragraph").lineHeight ||
+    editor.getAttributes("heading").lineHeight ||
+    null;
+
   const headingActive =
     (editor.isActive("heading", { level: 1 }) && "h1") ||
     (editor.isActive("heading", { level: 2 }) && "h2") ||
@@ -221,7 +259,7 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
         label={
           <span className="inline-flex items-center gap-1">
             <Type className="h-4 w-4" />
-            <span className="hidden max-w-[7rem] truncate sm:inline">
+            <span className="max-w-[5rem] truncate text-xs sm:max-w-[7rem] sm:text-sm">
               {currentFontLabel}
             </span>
           </span>
@@ -258,6 +296,68 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
             }
           >
             <span style={{ fontFamily: f.value }}>{f.label}</span>
+          </DropdownItem>
+        ))}
+      </Dropdown>
+
+      {/* Font size */}
+      <Dropdown
+        title="Font size"
+        label={
+          <span className="inline-flex items-center gap-1">
+            <ALargeSmall className="h-4 w-4" />
+            <span className="text-xs">{currentFontSize || "—"}</span>
+          </span>
+        }
+        active={!!currentFontSize}
+        panelWidth={140}
+      >
+        <DropdownLabel>ফন্ট সাইজ</DropdownLabel>
+        <DropdownItem
+          active={!currentFontSize}
+          onClick={() => editor.chain().focus().unsetFontSize().run()}
+        >
+          ডিফল্ট
+        </DropdownItem>
+        {FONT_SIZES.map((size) => (
+          <DropdownItem
+            key={size}
+            active={currentFontSize === size}
+            onClick={() => editor.chain().focus().setFontSize(size).run()}
+          >
+            <span style={{ fontSize: size }}>{size}</span>
+          </DropdownItem>
+        ))}
+      </Dropdown>
+
+      {/* Line height */}
+      <Dropdown
+        title="Line height"
+        label={
+          <span className="inline-flex items-center gap-1">
+            <Rows3 className="h-4 w-4" />
+            <span className="text-xs">{currentLineHeight || "—"}</span>
+          </span>
+        }
+        active={!!currentLineHeight}
+        panelWidth={160}
+      >
+        <DropdownLabel>লাইন হাইট</DropdownLabel>
+        <DropdownItem
+          active={!currentLineHeight}
+          onClick={() => editor.chain().focus().unsetLineHeight().run()}
+        >
+          ডিফল্ট
+        </DropdownItem>
+        {LINE_HEIGHTS.map((lh) => (
+          <DropdownItem
+            key={lh.value}
+            active={currentLineHeight === lh.value}
+            onClick={() =>
+              editor.chain().focus().setLineHeight(lh.value).run()
+            }
+          >
+            {lh.label}
           </DropdownItem>
         ))}
       </Dropdown>
@@ -377,6 +477,103 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
           onClick={() => editor.chain().focus().setTextAlign("right").run()}
         >
           Align right
+        </DropdownItem>
+      </Dropdown>
+
+      <Divider />
+
+      {/* Table */}
+      <Dropdown
+        title="Table"
+        label={<TableIcon className="h-4 w-4" />}
+        active={editor.isActive("table")}
+        panelWidth={220}
+      >
+        <DropdownItem
+          icon={Grid3x3}
+          onClick={() =>
+            editor
+              .chain()
+              .focus()
+              .insertTable({ rows: 3, cols: 3, withHeaderRow: true })
+              .run()
+          }
+        >
+          নতুন টেবিল (৩×৩)
+        </DropdownItem>
+        <DropdownItem
+          icon={Grid3x3}
+          onClick={() =>
+            editor
+              .chain()
+              .focus()
+              .insertTable({ rows: 2, cols: 5, withHeaderRow: false })
+              .run()
+          }
+        >
+          Fill-in টেবিল (২×৫)
+        </DropdownItem>
+        <DropdownDivider />
+        <DropdownLabel>সারি (Row)</DropdownLabel>
+        <DropdownItem
+          icon={ArrowUp}
+          disabled={!editor.can().addRowBefore()}
+          onClick={() => editor.chain().focus().addRowBefore().run()}
+        >
+          উপরে নতুন সারি
+        </DropdownItem>
+        <DropdownItem
+          icon={ArrowDown}
+          disabled={!editor.can().addRowAfter()}
+          onClick={() => editor.chain().focus().addRowAfter().run()}
+        >
+          নিচে নতুন সারি
+        </DropdownItem>
+        <DropdownItem
+          icon={RowsIcon}
+          disabled={!editor.can().deleteRow()}
+          onClick={() => editor.chain().focus().deleteRow().run()}
+        >
+          সারি মুছে ফেলো
+        </DropdownItem>
+        <DropdownDivider />
+        <DropdownLabel>কলাম (Column)</DropdownLabel>
+        <DropdownItem
+          icon={ArrowLeft}
+          disabled={!editor.can().addColumnBefore()}
+          onClick={() => editor.chain().focus().addColumnBefore().run()}
+        >
+          বামে নতুন কলাম
+        </DropdownItem>
+        <DropdownItem
+          icon={ArrowRight}
+          disabled={!editor.can().addColumnAfter()}
+          onClick={() => editor.chain().focus().addColumnAfter().run()}
+        >
+          ডানে নতুন কলাম
+        </DropdownItem>
+        <DropdownItem
+          icon={Columns3}
+          disabled={!editor.can().deleteColumn()}
+          onClick={() => editor.chain().focus().deleteColumn().run()}
+        >
+          কলাম মুছে ফেলো
+        </DropdownItem>
+        <DropdownDivider />
+        <DropdownLabel>অন্যান্য</DropdownLabel>
+        <DropdownItem
+          icon={HeadingRowIcon}
+          disabled={!editor.can().toggleHeaderRow()}
+          onClick={() => editor.chain().focus().toggleHeaderRow().run()}
+        >
+          হেডার সারি টগল
+        </DropdownItem>
+        <DropdownItem
+          icon={Trash2}
+          disabled={!editor.can().deleteTable()}
+          onClick={() => editor.chain().focus().deleteTable().run()}
+        >
+          পুরো টেবিল মুছে ফেলো
         </DropdownItem>
       </Dropdown>
 

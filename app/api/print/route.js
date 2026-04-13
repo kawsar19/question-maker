@@ -189,6 +189,32 @@ pre {
   page-break-inside: avoid;
 }
 
+/* Question-paper tables */
+table,
+table.q-table {
+  border-collapse: collapse;
+  margin: 6pt 0;
+  page-break-inside: avoid;
+}
+
+table td,
+table th {
+  border: 1pt solid #000;
+  padding: 4pt 8pt;
+  min-width: 22pt;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background: #e5e7eb;
+  font-weight: 700;
+}
+
+table p {
+  margin: 0;
+}
+
 /* Avoid orphan question parts splitting across pages */
 ol > li { page-break-inside: avoid; }
 blockquote { page-break-inside: avoid; }

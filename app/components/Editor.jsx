@@ -2,59 +2,21 @@
 
 import { useState } from "react";
 import { EditorContent, useEditor } from "@tiptap/react";
-import { Extension } from "@tiptap/core";
 import StarterKit from "@tiptap/starter-kit";
 import Link from "@tiptap/extension-link";
 import Placeholder from "@tiptap/extension-placeholder";
 import TextAlign from "@tiptap/extension-text-align";
 import { TextStyle } from "@tiptap/extension-text-style";
 import { FontFamily } from "@tiptap/extension-font-family";
+import { Table } from "@tiptap/extension-table";
+import { TableRow } from "@tiptap/extension-table-row";
+import { TableCell } from "@tiptap/extension-table-cell";
+import { TableHeader } from "@tiptap/extension-table-header";
 import { Download, Loader2, FileText, Columns2 } from "lucide-react";
 import Toolbar from "./Toolbar";
 import TemplateModal from "./TemplateModal";
 import { Dropdown, DropdownItem, DropdownLabel } from "./Dropdown";
-
-// Preserve inline `style` attribute on block nodes so template formatting
-// (padding, margins, etc.) survives when content is loaded into the editor.
-const StylePreserve = Extension.create({
-  name: "stylePreserve",
-  addGlobalAttributes() {
-    return [
-      {
-        types: ["paragraph", "heading", "blockquote"],
-        attributes: {
-          style: {
-            default: null,
-            parseHTML: (el) => el.getAttribute("style"),
-            renderHTML: (attrs) => (attrs.style ? { style: attrs.style } : {}),
-          },
-        },
-      },
-      {
-        types: ["orderedList", "bulletList"],
-        attributes: {
-          class: {
-            default: null,
-            parseHTML: (el) => el.getAttribute("class"),
-            renderHTML: (attrs) => (attrs.class ? { class: attrs.class } : {}),
-          },
-        },
-      },
-      {
-        // Preserve inline style on <span> (textStyle mark) so wrappers
-        // used for flex layout etc. survive Tiptap's parse/render round-trip.
-        types: ["textStyle"],
-        attributes: {
-          style: {
-            default: null,
-            parseHTML: (el) => el.getAttribute("style"),
-            renderHTML: (attrs) => (attrs.style ? { style: attrs.style } : {}),
-          },
-        },
-      },
-    ];
-  },
-});
+import { StylePreserve, FontSize, LineHeight } from "./editor-extensions";
 
 const initialContent = `
   <h1>প্রশ্ন তৈরিতে স্বাগতম</h1>
@@ -95,6 +57,15 @@ export default function Editor() {
       FontFamily.configure({
         types: ["textStyle"],
       }),
+      FontSize,
+      LineHeight,
+      Table.configure({
+        resizable: false,
+        HTMLAttributes: { class: "q-table" },
+      }),
+      TableRow,
+      TableHeader,
+      TableCell,
     ],
     content: initialContent,
     immediatelyRender: false,
@@ -235,6 +206,9 @@ export default function Editor() {
           </button>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
 
       <TemplateModal
         open={templateOpen}
