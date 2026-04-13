@@ -11,10 +11,7 @@ export const class6 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -65,10 +62,7 @@ export const class6 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলাদেশ ও বিশ্বপরিচয়</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ৩০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১২ <span style="font-weight:normal;">(প্রতিটি ২)</span></span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১২ <span style="font-weight:normal;">(প্রতিটি ২)</span></strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>মুক্তিযুদ্ধ কী?</li>
@@ -89,10 +83,7 @@ export const class6 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
         <p style="text-align:center;margin:0.2em 0;"><em>অনুশীলনী ১.১</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ৩০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>যোগ করো: ৪৫৬ + ২৭৮ + ১২৯</li>

@@ -40,6 +40,18 @@ const StylePreserve = Extension.create({
           },
         },
       },
+      {
+        // Preserve inline style on <span> (textStyle mark) so wrappers
+        // used for flex layout etc. survive Tiptap's parse/render round-trip.
+        types: ["textStyle"],
+        attributes: {
+          style: {
+            default: null,
+            parseHTML: (el) => el.getAttribute("style"),
+            renderHTML: (attrs) => (attrs.style ? { style: attrs.style } : {}),
+          },
+        },
+      },
     ];
   },
 });

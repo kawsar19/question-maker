@@ -11,10 +11,7 @@ export const ssc = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা প্রথম পত্র</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -41,10 +38,7 @@ export const ssc = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> পদার্থবিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ৫ <span style="font-weight:normal;">(প্রতিটি ১)</span></span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ৫ <span style="font-weight:normal;">(প্রতিটি ১)</span></strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -104,10 +98,7 @@ export const ssc = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> রসায়ন</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>

@@ -8,9 +8,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
             Question Maker
           </h1>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            A rich-text editor built with Next.js, Tailwind CSS, and Tiptap v3.
-          </p>
+         
         </header>
 
         <Editor />

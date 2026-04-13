@@ -2,10 +2,7 @@ const headerTemplate = (examName, year) => `
   <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
   <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">${examName} – ${year}</h2>
   <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> [শ্রেণি] &nbsp;|&nbsp; <strong>বিষয়:</strong> [বিষয়]</p>
-  <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-    <span><strong>সময়:</strong> [সময়]</span>
-    <span><strong>পূর্ণমান:</strong> [পূর্ণমান]</span>
-  </p>
+  <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: [সময়]</strong> <strong>পূর্ণমান: [পূর্ণমান]</strong></p>
   <hr />
 `;
 

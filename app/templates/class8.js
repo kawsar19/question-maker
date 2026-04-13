@@ -11,10 +11,7 @@ export const class8 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -41,10 +38,7 @@ export const class8 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বীজগণিত — অনুশীলনী</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ৩০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১৫</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১৫</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>সমাধান করো: ৩x + ৫ = ২০</li>
@@ -65,10 +59,7 @@ export const class8 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ৩০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১৫ <span style="font-weight:normal;">(প্রতিটি ৩)</span></span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১৫ <span style="font-weight:normal;">(প্রতিটি ৩)</span></strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>পদার্থের অবস্থা কত প্রকার ও কী কী?</li>

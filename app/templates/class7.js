@@ -11,10 +11,7 @@ export const class7 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -41,10 +38,7 @@ export const class7 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ২০ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ১০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
@@ -95,10 +89,7 @@ export const class7 = {
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> ইসলাম ও নৈতিক শিক্ষা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>রচনামূলক প্রশ্ন</em></p>
-        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;">
-          <span><strong>সময়:</strong> ৪৫ মিনিট</span>
-          <span><strong>পূর্ণমান:</strong> ২০</span>
-        </p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৪৫ মিনিট</strong> <strong>পূর্ণমান: ২০</strong></p>
         <hr />
         <ol class="bn-digits-list">
           <li>
