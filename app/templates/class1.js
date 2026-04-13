@@ -254,5 +254,68 @@ export const class1 = {
         <p style="text-align:center;margin-top:1em;">---***---</p>
       `,
     },
+    {
+      id: "c1-english-monthly",
+      title: "English — Monthly Assessment",
+      subject: "English",
+      html: `
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> One &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 30 minutes</strong> <strong>Full Marks: 20</strong></p>
+        <p style="margin:0.3em 0;"><strong>Student's Name:</strong> ______________________________ &nbsp;&nbsp; <strong>Roll No:</strong> __________</p>
+        <hr />
+
+        <ol class="bn-digits-list">
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write the small letters from <strong>a</strong> to <strong>j</strong>. <em>(5)</em></p>
+            <p>____________________________________________________________</p>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write the capital letters from <strong>A</strong> to <strong>J</strong>. <em>(5)</em></p>
+            <p>____________________________________________________________</p>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Fill in the blanks with correct letters. <em>(5)</em></p>
+            <table class="q-table">
+              <tbody>
+                <tr>
+                  <td><strong>a</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>c</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>e</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>g</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>i</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Match the following. <em>(5)</em></p>
+            <table class="q-table">
+              <thead>
+                <tr>
+                  <th>Column A</th>
+                  <th>Column B</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Cat</td><td>বই</td></tr>
+                <tr><td>Book</td><td>সূর্য</td></tr>
+                <tr><td>Sun</td><td>বিড়াল</td></tr>
+                <tr><td>Fish</td><td>পাখি</td></tr>
+                <tr><td>Bird</td><td>মাছ</td></tr>
+              </tbody>
+            </table>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:1em;">---***---</p>
+      `,
+    },
   ],
 };

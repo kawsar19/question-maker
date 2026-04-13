@@ -95,5 +95,88 @@ export const class6 = {
         </ol>
       `,
     },
+    {
+      id: "c6-english-monthly",
+      title: "English — Seen Passage",
+      subject: "English",
+      html: `
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Six &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 45 minutes</strong> <strong>Full Marks: 30</strong></p>
+        <hr />
+
+        <p><strong>Read the following passage carefully and answer the questions below:</strong></p>
+        <blockquote>
+          <p>Bangladesh is a riverine country. The rivers of Bangladesh play a vital role in our economy, agriculture and daily life. The Padma, the Meghna, the Jamuna and the Karnaphuli are some of the main rivers. People depend on these rivers for irrigation, fishing and transportation. During the rainy season, rivers often overflow and cause floods, but the silt they carry makes the soil fertile.</p>
+        </blockquote>
+
+        <ol class="bn-digits-list">
+          <li>
+            <p style="display:flex;justify-content:space-between;">Choose the correct answer. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>
+                <p>Bangladesh is a ___ country.</p>
+                <p>i) mountainous &nbsp;&nbsp; ii) riverine &nbsp;&nbsp; iii) desert &nbsp;&nbsp; iv) coastal</p>
+              </li>
+              <li>
+                <p>Which one is NOT a river mentioned in the passage?</p>
+                <p>i) Padma &nbsp;&nbsp; ii) Meghna &nbsp;&nbsp; iii) Surma &nbsp;&nbsp; iv) Karnaphuli</p>
+              </li>
+              <li>
+                <p>Rivers are used for —</p>
+                <p>i) farming only &nbsp;&nbsp; ii) fishing and transport &nbsp;&nbsp; iii) tourism &nbsp;&nbsp; iv) housing</p>
+              </li>
+              <li>
+                <p>What makes the soil fertile?</p>
+                <p>i) rain &nbsp;&nbsp; ii) wind &nbsp;&nbsp; iii) silt &nbsp;&nbsp; iv) sun</p>
+              </li>
+              <li>
+                <p>During the rainy season, rivers often —</p>
+                <p>i) dry up &nbsp;&nbsp; ii) overflow &nbsp;&nbsp; iii) freeze &nbsp;&nbsp; iv) disappear</p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Answer the following questions in short. <em>(2×5=10)</em></p>
+            <ol class="en-letters-list">
+              <li>Why is Bangladesh called a riverine country?</li>
+              <li>Name four major rivers of Bangladesh.</li>
+              <li>How do rivers help the farmers?</li>
+              <li>What happens during the rainy season?</li>
+              <li>Why are floods sometimes useful?</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Fill in the blanks with appropriate articles (a/an/the). <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>___ Padma is ___ longest river in Bangladesh.</li>
+              <li>She saw ___ elephant in the zoo.</li>
+              <li>___ apple a day keeps ___ doctor away.</li>
+              <li>He is ___ honest man.</li>
+              <li>___ sun rises in ___ east.</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Make sentences with the following words. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>beautiful</li>
+              <li>always</li>
+              <li>garden</li>
+              <li>honest</li>
+              <li>travel</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write a short paragraph (about 80 words) on <strong>"My Favourite Hobby"</strong>. <em>(5)</em></p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:1em;">---***---</p>
+      `,
+    },
   ],
 };

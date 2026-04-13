@@ -101,5 +101,91 @@ export const class7 = {
         </ol>
       `,
     },
+    {
+      id: "c7-english-grammar",
+      title: "English — Grammar & Writing",
+      subject: "English",
+      html: `
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Seven &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 1 hour</strong> <strong>Full Marks: 50</strong></p>
+        <hr />
+
+        <p style="text-align:center;"><strong>[Grammar Section]</strong></p>
+
+        <ol class="bn-digits-list">
+          <li>
+            <p style="display:flex;justify-content:space-between;">Fill in the blanks with the correct form of verbs in brackets. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>He ___ (go) to school every day.</li>
+              <li>They ___ (play) football now.</li>
+              <li>The sun ___ (rise) in the east.</li>
+              <li>She ___ (write) a letter yesterday.</li>
+              <li>We ___ (not see) him since Monday.</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Fill in the blanks with suitable prepositions. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>He is good ___ English.</li>
+              <li>The book is ___ the table.</li>
+              <li>I am fond ___ mangoes.</li>
+              <li>She has been suffering ___ fever.</li>
+              <li>He is waiting ___ his friend.</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Change the voice. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>He writes a letter.</li>
+              <li>The boy has done the work.</li>
+              <li>Rina is reading a book.</li>
+              <li>They will build a house.</li>
+              <li>Who broke the glass?</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Change the narration. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>He said, "I am happy."</li>
+              <li>Mother said to me, "Don't tell a lie."</li>
+              <li>She said to him, "Where are you going?"</li>
+              <li>The teacher said, "The earth is round."</li>
+              <li>He said to me, "Please help me."</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Complete the sentences with suitable words. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>If I were rich, I ___________________.</li>
+              <li>Walk fast lest ___________________.</li>
+              <li>He ran fast so that ___________________.</li>
+              <li>Had I been a bird, ___________________.</li>
+              <li>It is high time we ___________________.</li>
+            </ol>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:0.5em;"><strong>[Writing Section]</strong></p>
+
+        <ol class="bn-digits-list" style="counter-reset:bn-li 5;">
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write a letter to your friend telling him about your hobby. <em>(10)</em></p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write a paragraph on <strong>"A Rainy Day"</strong> in about 150 words. <em>(15)</em></p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:1em;">---***---</p>
+      `,
+    },
   ],
 };

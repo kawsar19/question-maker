@@ -81,6 +81,13 @@ function buildHtmlDoc({ bodyHtml, title, fontDataUrl, layout }) {
   suffix: ") ";
 }
 
+@counter-style en-letters {
+  system: alphabetic;
+  symbols: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+           "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z";
+  suffix: ") ";
+}
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -178,6 +185,31 @@ ol.bn-letters-list > li {
 
 ol.bn-letters-list > li::before {
   content: counter(bn-letter, bn-letters) ") ";
+  font-weight: 700;
+  position: absolute;
+  left: -24pt;
+  top: 0;
+  min-width: 20pt;
+  text-align: right;
+  padding-right: 3pt;
+}
+
+/* English letter list: a) b) c) d) */
+ol.en-letters-list {
+  list-style: none !important;
+  counter-reset: en-letter;
+  padding-left: 28pt;
+  margin: 4pt 0;
+}
+
+ol.en-letters-list > li {
+  counter-increment: en-letter;
+  position: relative;
+  margin: 3pt 0;
+}
+
+ol.en-letters-list > li::before {
+  content: counter(en-letter, en-letters) ") ";
   font-weight: 700;
   position: absolute;
   left: -24pt;

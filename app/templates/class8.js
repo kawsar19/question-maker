@@ -70,5 +70,71 @@ export const class8 = {
         </ol>
       `,
     },
+    {
+      id: "c8-english-comprehension",
+      title: "English — Comprehension & Writing",
+      subject: "English",
+      html: `
+        <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
+        <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
+        <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Eight &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
+        <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 1 hour</strong> <strong>Full Marks: 50</strong></p>
+        <hr />
+
+        <p><strong>Read the following passage carefully and answer the questions below:</strong></p>
+        <blockquote>
+          <p>The Royal Bengal Tiger is the national animal of Bangladesh. It lives mainly in the Sundarbans, the largest mangrove forest in the world. The tiger is a symbol of strength, courage and beauty. However, due to poaching, deforestation and climate change, its number is decreasing alarmingly. The government has taken several steps to protect this magnificent animal, such as declaring parts of the Sundarbans as protected reserves and strictly banning hunting. We should all be aware of the importance of preserving wildlife for our future generations.</p>
+        </blockquote>
+
+        <ol class="bn-digits-list">
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write whether the following statements are <strong>TRUE</strong> or <strong>FALSE</strong>. Give correct answer if false. <em>(1×5=5)</em></p>
+            <ol class="en-letters-list">
+              <li>The Royal Bengal Tiger lives in the Himalayas.</li>
+              <li>The Sundarbans is the largest mangrove forest in the world.</li>
+              <li>The tiger population is increasing day by day.</li>
+              <li>Poaching is one of the reasons for the decrease in tiger numbers.</li>
+              <li>Hunting tigers is legal in Bangladesh.</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Answer the following questions in short. <em>(2×5=10)</em></p>
+            <ol class="en-letters-list">
+              <li>What is the national animal of Bangladesh?</li>
+              <li>Where does the Royal Bengal Tiger mainly live?</li>
+              <li>What does the tiger symbolize?</li>
+              <li>Why is the tiger population decreasing?</li>
+              <li>What steps has the government taken?</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Fill in the blanks with the words from the box. <em>(1×5=5)</em></p>
+            <p style="text-align:center;"><em>[ protect &nbsp;|&nbsp; wildlife &nbsp;|&nbsp; forest &nbsp;|&nbsp; awareness &nbsp;|&nbsp; future ]</em></p>
+            <ol class="en-letters-list">
+              <li>We must _______ our environment.</li>
+              <li>The Sundarbans is a mangrove _______.</li>
+              <li>_______ is essential for ecological balance.</li>
+              <li>We should create _______ about conservation.</li>
+              <li>We are responsible for our _______ generations.</li>
+            </ol>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write a summary of the above passage in your own words (about 70 words). <em>(10)</em></p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+          </li>
+          <li>
+            <p style="display:flex;justify-content:space-between;">Write a composition on <strong>"A Memorable Day in My Life"</strong> in about 200 words. <em>(20)</em></p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+            <p>________________________________________________________________________</p>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:1em;">---***---</p>
+      `,
+    },
   ],
 };

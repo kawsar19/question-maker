@@ -416,6 +416,13 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
         >
           Numbered (1. 2. 3.)
         </DropdownItem>
+        <DropdownItem
+          icon={Languages}
+          active={listClass === "en-letters-list"}
+          onClick={() => toggleOrderedListClass("en-letters-list")}
+        >
+          a) b) c) Lettered
+        </DropdownItem>
         <DropdownDivider />
         <DropdownLabel>বাংলা</DropdownLabel>
         <DropdownItem
