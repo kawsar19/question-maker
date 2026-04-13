@@ -1,10 +1,33 @@
 import { NextResponse } from "next/server";
 import { readFileSync } from "fs";
 import path from "path";
-import puppeteer from "puppeteer";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
+
+/**
+ * Launch a browser — uses bundled puppeteer in local dev, and the lightweight
+ * @sparticuz/chromium binary on Vercel / other serverless platforms.
+ */
+async function launchBrowser() {
+  const isDev = process.env.NODE_ENV === "development";
+  if (isDev) {
+    const puppeteer = (await import("puppeteer")).default;
+    return puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+  }
+  const [{ default: chromium }, { default: puppeteerCore }] = await Promise.all(
+    [import("@sparticuz/chromium"), import("puppeteer-core")],
+  );
+  return puppeteerCore.launch({
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath(),
+    headless: true,
+  });
+}
 
 function escapeHtml(s) {
   return String(s).replace(
@@ -303,10 +326,7 @@ export async function POST(request) {
       layout,
     });
 
-    browser = await puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
+    browser = await launchBrowser();
     const page = await browser.newPage();
     await page.setContent(fullHtml, { waitUntil: "networkidle0" });
     await page.evaluateHandle("document.fonts.ready");
