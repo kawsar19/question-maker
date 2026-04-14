@@ -7,12 +7,14 @@ export const class7 = {
       title: "বাংলা — সৃজনশীল প্রশ্ন",
       subject: "বাংলা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>নিচের উদ্দীপকটি পড়ে প্রশ্নগুলোর উত্তর দাও:</p>
@@ -34,12 +36,14 @@ export const class7 = {
       title: "বিজ্ঞান — বহুনির্বাচনী",
       subject: "বিজ্ঞান",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>উদ্ভিদের প্রধান খাদ্য তৈরি হয় কোথায়?</p>
@@ -85,12 +89,14 @@ export const class7 = {
       title: "ইসলাম ও নৈতিক শিক্ষা — রচনামূলক",
       subject: "ইসলাম ও নৈতিক শিক্ষা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> সপ্তম &nbsp;|&nbsp; <strong>বিষয়:</strong> ইসলাম ও নৈতিক শিক্ষা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>রচনামূলক প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৪৫ মিনিট</strong> <strong>পূর্ণমান: ২০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>তাওহিদ বলতে কী বোঝ? তাওহিদে বিশ্বাসের গুরুত্ব ও প্রভাব আলোচনা করো।</p>
@@ -106,11 +112,13 @@ export const class7 = {
       title: "English — Grammar & Writing",
       subject: "English",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Seven &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 1 hour</strong> <strong>Full Marks: 50</strong></p>
         <hr />
+        </div>
 
         <p style="text-align:center;"><strong>[Grammar Section]</strong></p>
 

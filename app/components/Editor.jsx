@@ -16,7 +16,12 @@ import { Download, Loader2, FileText, Columns2 } from "lucide-react";
 import Toolbar from "./Toolbar";
 import TemplateModal from "./TemplateModal";
 import { Dropdown, DropdownItem, DropdownLabel } from "./Dropdown";
-import { StylePreserve, FontSize, LineHeight } from "./editor-extensions";
+import {
+  StylePreserve,
+  FontSize,
+  LineHeight,
+  BlockWrapper,
+} from "./editor-extensions";
 
 const initialContent = `
   <h1>প্রশ্ন তৈরিতে স্বাগতম</h1>
@@ -66,6 +71,7 @@ export default function Editor() {
       TableRow,
       TableHeader,
       TableCell,
+      BlockWrapper,
     ],
     content: initialContent,
     immediatelyRender: false,

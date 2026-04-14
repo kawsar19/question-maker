@@ -7,12 +7,14 @@ export const class6 = {
       title: "বাংলা — বহুনির্বাচনী প্রশ্ন",
       subject: "বাংলা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>"মিনু" গল্পের রচয়িতা কে?</p>
@@ -58,12 +60,14 @@ export const class6 = {
       title: "বাংলাদেশ ও বিশ্বপরিচয় — সংক্ষিপ্ত",
       subject: "বাংলাদেশ ও বিশ্বপরিচয়",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলাদেশ ও বিশ্বপরিচয়</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১২ <span style="font-weight:normal;">(প্রতিটি ২)</span></strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>মুক্তিযুদ্ধ কী?</li>
           <li>বাংলাদেশের প্রথম রাষ্ট্রপতির নাম লেখ।</li>
@@ -79,12 +83,14 @@ export const class6 = {
       title: "গণিত — অনুশীলনী",
       subject: "গণিত",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ষষ্ঠ &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
         <p style="text-align:center;margin:0.2em 0;"><em>অনুশীলনী ১.১</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>যোগ করো: ৪৫৬ + ২৭৮ + ১২৯</li>
           <li>বিয়োগ করো: ১০০০ − ৫৪৭</li>
@@ -100,11 +106,13 @@ export const class6 = {
       title: "English — Seen Passage",
       subject: "English",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Six &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 45 minutes</strong> <strong>Full Marks: 30</strong></p>
         <hr />
+        </div>
 
         <p><strong>Read the following passage carefully and answer the questions below:</strong></p>
         <blockquote>

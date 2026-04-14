@@ -36,6 +36,8 @@ import {
   Columns2 as Columns2Icon,
   LayoutGrid,
   AlignVerticalSpaceAround,
+  Group as GroupIcon,
+  Ungroup as UngroupIcon,
   Table as TableIcon,
   Grid3x3,
   RowsIcon,
@@ -591,6 +593,27 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
           Align right
         </DropdownItem>
       </Dropdown>
+
+      <Divider />
+
+      {/* Block wrapper — group selected blocks into a reorderable unit */}
+      <IconBtn
+        icon={GroupIcon}
+        onClick={() =>
+          editor.chain().focus().wrapInBlockWrapper().run()
+        }
+        disabled={!editor.can().wrapInBlockWrapper()}
+        title="ব্লক হিসেবে গ্রুপ (duplicate/reorder করতে)"
+        active={editor.isActive("blockWrapper")}
+      />
+      <IconBtn
+        icon={UngroupIcon}
+        onClick={() =>
+          editor.chain().focus().unwrapBlockWrapper().run()
+        }
+        disabled={!editor.isActive("blockWrapper")}
+        title="ব্লক গ্রুপ সরাও"
+      />
 
       <Divider />
 

@@ -1,9 +1,11 @@
 const headerTemplate = (examName, year) => `
-  <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
-  <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">${examName} – ${year}</h2>
-  <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> [শ্রেণি] &nbsp;|&nbsp; <strong>বিষয়:</strong> [বিষয়]</p>
-  <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: [সময়]</strong> <strong>পূর্ণমান: [পূর্ণমান]</strong></p>
-  <hr />
+  <div data-block-wrapper="true">
+    <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+    <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">${examName} – ${year}</h2>
+    <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> [শ্রেণি] &nbsp;|&nbsp; <strong>বিষয়:</strong> [বিষয়]</p>
+    <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: [সময়]</strong> <strong>পূর্ণমান: [পূর্ণমান]</strong></p>
+    <hr />
+  </div>
 `;
 
 export const miscBlocks = {
@@ -56,7 +58,7 @@ export const miscBlocks = {
       id: "instructions",
       label: "পরীক্ষার নির্দেশনা",
       description: "পরীক্ষার্থীদের জন্য নির্দেশনা",
-      html: `<p><strong>নির্দেশনা:</strong></p><ul><li>সব প্রশ্নের উত্তর দিতে হবে।</li><li>ডান পাশে প্রশ্নের মান দেওয়া আছে।</li><li>উত্তর সংক্ষিপ্ত ও যথার্থ হতে হবে।</li></ul>`,
+      html: `<div data-block-wrapper="true"><p><strong>নির্দেশনা:</strong></p><ul><li>সব প্রশ্নের উত্তর দিতে হবে।</li><li>ডান পাশে প্রশ্নের মান দেওয়া আছে।</li><li>উত্তর সংক্ষিপ্ত ও যথার্থ হতে হবে।</li></ul></div>`,
     },
     {
       id: "answer-note",

@@ -7,12 +7,14 @@ export const ssc = {
       title: "বাংলা প্রথম পত্র — সৃজনশীল",
       subject: "বাংলা প্রথম পত্র",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা প্রথম পত্র</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>নিচের উদ্দীপকটি পড়ে প্রশ্নগুলোর উত্তর দাও:</p>
@@ -34,12 +36,14 @@ export const ssc = {
       title: "পদার্থবিজ্ঞান — বহুনির্বাচনী",
       subject: "পদার্থবিজ্ঞান",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> পদার্থবিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বহুনির্বাচনী প্রশ্ন (MCQ)</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ৫ <span style="font-weight:normal;">(প্রতিটি ১)</span></strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>নিউটনের দ্বিতীয় সূত্র থেকে আমরা কী সম্পর্ক পাই?</p>
@@ -94,12 +98,14 @@ export const ssc = {
       title: "রসায়ন — সৃজনশীল",
       subject: "রসায়ন",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">নির্বাচনী পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> নবম-দশম &nbsp;|&nbsp; <strong>বিষয়:</strong> রসায়ন</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>নিচের উদ্দীপকটি পড়ে প্রশ্নগুলোর উত্তর দাও:</p>
@@ -121,11 +127,13 @@ export const ssc = {
       title: "English 1st Paper — SSC",
       subject: "English 1st Paper",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Pre-Test Examination – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Ten &nbsp;|&nbsp; <strong>Subject:</strong> English 1st Paper</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 3 hours</strong> <strong>Full Marks: 100</strong></p>
         <hr />
+        </div>
 
         <p style="text-align:center;"><strong>[Seen Comprehension]</strong></p>
         <p><strong>Read the following text and answer the questions 1, 2 and 3.</strong></p>
@@ -246,11 +254,13 @@ export const ssc = {
       title: "English 2nd Paper — SSC (Grammar)",
       subject: "English 2nd Paper",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Pre-Test Examination – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Ten &nbsp;|&nbsp; <strong>Subject:</strong> English 2nd Paper</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 3 hours</strong> <strong>Full Marks: 100</strong></p>
         <hr />
+        </div>
 
         <p style="text-align:center;"><strong>Part – A : Grammar (60)</strong></p>
 

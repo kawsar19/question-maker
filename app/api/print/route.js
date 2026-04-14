@@ -350,6 +350,13 @@ table p {
 ol > li { page-break-inside: avoid; }
 blockquote { page-break-inside: avoid; }
 
+/* Block wrappers: keep grouped content together but hide editor-only controls */
+[data-block-wrapper] {
+  page-break-inside: avoid;
+  margin: 4pt 0;
+}
+.block-menu, .block-menu-trigger, .block-menu-panel { display: none !important; }
+
 /* 2-up duplicate layout (landscape A4, two identical halves side-by-side) */
 .sheet-2up {
   display: flex;

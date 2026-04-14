@@ -7,12 +7,14 @@ export const class8 = {
       title: "বাংলা — সৃজনশীল প্রশ্ন",
       subject: "বাংলা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সৃজনশীল প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২৫ মিনিট</strong> <strong>পূর্ণমান: ১০</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>
             <p>উদ্দীপকটি পড়ে প্রশ্নগুলোর উত্তর দাও:</p>
@@ -34,12 +36,14 @@ export const class8 = {
       title: "গণিত — বীজগণিত",
       subject: "গণিত",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
         <p style="text-align:center;margin:0.2em 0;"><em>বীজগণিত — অনুশীলনী</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১৫</strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>সমাধান করো: ৩x + ৫ = ২০</li>
           <li>x² − ৯ = ০ হলে x-এর মান কত?</li>
@@ -55,12 +59,14 @@ export const class8 = {
       title: "বিজ্ঞান — সংক্ষিপ্ত প্রশ্ন",
       subject: "বিজ্ঞান",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> অষ্টম &nbsp;|&nbsp; <strong>বিষয়:</strong> বিজ্ঞান</p>
         <p style="text-align:center;margin:0.2em 0;"><em>সংক্ষিপ্ত উত্তরমূলক প্রশ্ন</em></p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ৩০ মিনিট</strong> <strong>পূর্ণমান: ১৫ <span style="font-weight:normal;">(প্রতিটি ৩)</span></strong></p>
         <hr />
+        </div>
         <ol class="bn-digits-list">
           <li>পদার্থের অবস্থা কত প্রকার ও কী কী?</li>
           <li>শক্তির রূপান্তর বলতে কী বোঝ? উদাহরণসহ ব্যাখ্যা করো।</li>
@@ -75,11 +81,13 @@ export const class8 = {
       title: "English — Comprehension & Writing",
       subject: "English",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> Eight &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 1 hour</strong> <strong>Full Marks: 50</strong></p>
         <hr />
+        </div>
 
         <p><strong>Read the following passage carefully and answer the questions below:</strong></p>
         <blockquote>

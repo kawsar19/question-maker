@@ -7,6 +7,7 @@ export const class1 = {
       title: "বাংলা — মাসিক মূল্যায়ন",
       subject: "বাংলা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">আপনার স্কুলের নাম...</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">মাসিক মূল্যায়ন পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ১ম (শাখার নাম) &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
@@ -14,6 +15,9 @@ export const class1 = {
         <p style="margin:0.3em 0;"><strong>শিক্ষার্থীর নাম:</strong> ______________________________ &nbsp;&nbsp; <strong>রোল নং:</strong> __________</p>
         <hr />
 
+        </div>
+
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;">লিখিত অংশ</h3>
         <ol class="bn-digits-list">
           <li>
@@ -39,6 +43,9 @@ export const class1 = {
           </li>
         </ol>
 
+        </div>
+
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;">মৌখিক অংশ</h3>
         <ol class="bn-digits-list">
           <li>
@@ -59,6 +66,8 @@ export const class1 = {
           </li>
         </ol>
 
+        </div>
+
         <p style="text-align:center;margin-top:1em;">---***---</p>
       `,
     },
@@ -67,12 +76,15 @@ export const class1 = {
       title: "বাংলা — অর্ধবার্ষিক পরীক্ষা",
       subject: "বাংলা",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">অর্ধবার্ষিক পরীক্ষা – ২০২৬</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ১ম &nbsp;|&nbsp; <strong>বিষয়:</strong> বাংলা</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২ ঘণ্টা</strong> <strong>পূর্ণমান: ১০০</strong></p>
         <hr />
+        </div>
 
+        <div data-block-wrapper="true">
         <ol class="bn-digits-list">
           <li>
             <p style="display:flex;justify-content:space-between;">এক কথায় নিচের প্রশ্নগুলোর উত্তর দাও। <em>(৫×২=১০)</em></p>
@@ -251,6 +263,8 @@ export const class1 = {
           </li>
         </ol>
 
+        </div>
+
         <p style="text-align:center;margin-top:1em;">---***---</p>
       `,
     },
@@ -259,13 +273,16 @@ export const class1 = {
       title: "English — Monthly Assessment",
       subject: "English",
       html: `
+        <div data-block-wrapper="true">
         <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[School Name]</h3>
         <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">Monthly Assessment Test – 2026</h2>
         <p style="text-align:center;margin:0.2em 0;"><strong>Class:</strong> One &nbsp;|&nbsp; <strong>Subject:</strong> English</p>
         <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>Time: 30 minutes</strong> <strong>Full Marks: 20</strong></p>
         <p style="margin:0.3em 0;"><strong>Student's Name:</strong> ______________________________ &nbsp;&nbsp; <strong>Roll No:</strong> __________</p>
         <hr />
+        </div>
 
+        <div data-block-wrapper="true">
         <ol class="bn-digits-list">
           <li>
             <p style="display:flex;justify-content:space-between;">Write the small letters from <strong>a</strong> to <strong>j</strong>. <em>(5)</em></p>
@@ -313,6 +330,8 @@ export const class1 = {
             </table>
           </li>
         </ol>
+
+        </div>
 
         <p style="text-align:center;margin-top:1em;">---***---</p>
       `,

@@ -1,4 +1,47 @@
-import { Extension } from "@tiptap/core";
+import { Extension, Node, mergeAttributes } from "@tiptap/core";
+import { ReactNodeViewRenderer } from "@tiptap/react";
+import BlockWrapperView from "./BlockWrapperView";
+
+/**
+ * Block wrapper — groups one or more block-level nodes (paragraph, heading,
+ * list, blockquote, table, etc.) into a single reorderable/duplicatable unit.
+ * Renders as <div data-block-wrapper="true"> with a hover-visible 3-dot menu.
+ */
+export const BlockWrapper = Node.create({
+  name: "blockWrapper",
+  group: "block",
+  content: "block+",
+  defining: true,
+
+  parseHTML() {
+    return [{ tag: "div[data-block-wrapper]" }];
+  },
+
+  renderHTML({ HTMLAttributes }) {
+    return [
+      "div",
+      mergeAttributes({ "data-block-wrapper": "true" }, HTMLAttributes),
+      0,
+    ];
+  },
+
+  addNodeView() {
+    return ReactNodeViewRenderer(BlockWrapperView);
+  },
+
+  addCommands() {
+    return {
+      wrapInBlockWrapper:
+        () =>
+        ({ commands }) =>
+          commands.wrapIn(this.name),
+      unwrapBlockWrapper:
+        () =>
+        ({ commands }) =>
+          commands.lift(this.name),
+    };
+  },
+});
 
 /**
  * Preserve inline `style` attribute on block nodes + `class` on lists +
