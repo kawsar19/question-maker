@@ -10,9 +10,33 @@ export const mcqBlocks = {
     },
     {
       id: "mcq-options-only",
-      label: "শুধু ৪টি অপশন",
-      description: "ক/খ/গ/ঘ নম্বরযুক্ত অপশন (প্রশ্ন ছাড়া)",
+      label: "শুধু ৪টি অপশন (উল্লম্ব)",
+      description: "ক/খ/গ/ঘ নিচে নিচে (প্রশ্ন ছাড়া)",
       html: `<ol class="bn-letters-list"><li>অপশন ১</li><li>অপশন ২</li><li>অপশন ৩</li><li>অপশন ৪</li></ol>`,
+    },
+    {
+      id: "mcq-options-2col",
+      label: "৪টি অপশন — ২ কলাম (২×২)",
+      description: "ক খ পাশাপাশি, নিচে গ ঘ পাশাপাশি",
+      html: `<ol class="bn-letters-list mcq-grid-2"><li>অপশন ১</li><li>অপশন ২</li><li>অপশন ৩</li><li>অপশন ৪</li></ol>`,
+    },
+    {
+      id: "mcq-options-4col",
+      label: "৪টি অপশন — ১ সারিতে",
+      description: "ক খ গ ঘ চারটিই পাশাপাশি এক লাইনে",
+      html: `<ol class="bn-letters-list mcq-grid-4"><li>অপশন ১</li><li>অপশন ২</li><li>অপশন ৩</li><li>অপশন ৪</li></ol>`,
+    },
+    {
+      id: "mcq-4option-2col",
+      label: "MCQ + ২ কলাম অপশন",
+      description: "প্রশ্ন + ক খ গ ঘ (২×২ গ্রিড)",
+      html: `<ol class="bn-digits-list"><li><p>এখানে প্রশ্ন লিখুন?</p><ol class="bn-letters-list mcq-grid-2"><li>অপশন ১</li><li>অপশন ২</li><li>অপশন ৩</li><li>অপশন ৪</li></ol></li></ol>`,
+    },
+    {
+      id: "mcq-4option-4col",
+      label: "MCQ + ১ সারিতে অপশন",
+      description: "প্রশ্ন + ক খ গ ঘ (চারটিই পাশাপাশি)",
+      html: `<ol class="bn-digits-list"><li><p>এখানে প্রশ্ন লিখুন?</p><ol class="bn-letters-list mcq-grid-4"><li>অপশন ১</li><li>অপশন ২</li><li>অপশন ৩</li><li>অপশন ৪</li></ol></li></ol>`,
     },
     {
       id: "mcq-truefalse",

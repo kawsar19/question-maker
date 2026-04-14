@@ -245,6 +245,136 @@ ol.en-letters-list > li::before {
   padding-right: 0.25rem;
 }
 
+/* ============================================================
+   MCQ grid layouts — apply alongside bn-letters-list / en-letters-list
+   ============================================================ */
+.tiptap ol.mcq-grid-2,
+.tiptap ol.mcq-grid-4,
+ol.mcq-grid-2,
+ol.mcq-grid-4 {
+  display: grid;
+  padding-left: 0;
+  row-gap: 0.35rem;
+}
+
+.tiptap ol.mcq-grid-2,
+ol.mcq-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.25rem;
+}
+
+.tiptap ol.mcq-grid-4,
+ol.mcq-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 0.75rem;
+}
+
+.tiptap ol.mcq-grid-2 > li,
+.tiptap ol.mcq-grid-4 > li,
+ol.mcq-grid-2 > li,
+ol.mcq-grid-4 > li {
+  padding-left: 2rem;
+  margin: 0.15rem 0;
+}
+
+.tiptap ol.mcq-grid-2 > li::before,
+.tiptap ol.mcq-grid-4 > li::before,
+ol.mcq-grid-2 > li::before,
+ol.mcq-grid-4 > li::before {
+  left: 0;
+  min-width: 1.6rem;
+  text-align: left;
+  padding-right: 0;
+}
+
+/* ============================================================
+   Circled list markers (4 types)
+   ============================================================ */
+.tiptap ol[class*="-circle-list"],
+ol[class*="-circle-list"] {
+  list-style: none !important;
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+
+.tiptap ol[class*="-circle-list"] > li,
+ol[class*="-circle-list"] > li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 0.4rem 0;
+  list-style: none;
+}
+
+.tiptap ol[class*="-circle-list"] > li::before,
+ol[class*="-circle-list"] > li::before {
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.4rem;
+  text-align: center;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85em;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Counter resets + content for each circle variant */
+.tiptap ol.en-digits-circle-list,
+ol.en-digits-circle-list {
+  counter-reset: circ-en-digit;
+}
+.tiptap ol.en-digits-circle-list > li,
+ol.en-digits-circle-list > li {
+  counter-increment: circ-en-digit;
+}
+.tiptap ol.en-digits-circle-list > li::before,
+ol.en-digits-circle-list > li::before {
+  content: counter(circ-en-digit);
+}
+
+.tiptap ol.en-letters-circle-list,
+ol.en-letters-circle-list {
+  counter-reset: circ-en-letter;
+}
+.tiptap ol.en-letters-circle-list > li,
+ol.en-letters-circle-list > li {
+  counter-increment: circ-en-letter;
+}
+.tiptap ol.en-letters-circle-list > li::before,
+ol.en-letters-circle-list > li::before {
+  content: counter(circ-en-letter, en-letters);
+}
+
+.tiptap ol.bn-digits-circle-list,
+ol.bn-digits-circle-list {
+  counter-reset: circ-bn-digit;
+}
+.tiptap ol.bn-digits-circle-list > li,
+ol.bn-digits-circle-list > li {
+  counter-increment: circ-bn-digit;
+}
+.tiptap ol.bn-digits-circle-list > li::before,
+ol.bn-digits-circle-list > li::before {
+  content: counter(circ-bn-digit, bn-digits);
+}
+
+.tiptap ol.bn-letters-circle-list,
+ol.bn-letters-circle-list {
+  counter-reset: circ-bn-letter;
+}
+.tiptap ol.bn-letters-circle-list > li,
+ol.bn-letters-circle-list > li {
+  counter-increment: circ-bn-letter;
+}
+.tiptap ol.bn-letters-circle-list > li::before,
+ol.bn-letters-circle-list > li::before {
+  content: counter(circ-bn-letter, bn-letters);
+}
+
 .tiptap li > p {
   margin: 0.15rem 0;
 }

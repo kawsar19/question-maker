@@ -219,6 +219,82 @@ ol.en-letters-list > li::before {
   padding-right: 3pt;
 }
 
+/* ===== MCQ grid layouts ===== */
+ol.mcq-grid-2,
+ol.mcq-grid-4 {
+  display: grid;
+  padding-left: 0;
+  row-gap: 4pt;
+}
+
+ol.mcq-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 14pt;
+}
+
+ol.mcq-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 8pt;
+}
+
+ol.mcq-grid-2 > li,
+ol.mcq-grid-4 > li {
+  padding-left: 22pt;
+  margin: 2pt 0;
+}
+
+ol.mcq-grid-2 > li::before,
+ol.mcq-grid-4 > li::before {
+  left: 0;
+  min-width: 16pt;
+  text-align: left;
+  padding-right: 0;
+}
+
+/* ===== Circled list markers ===== */
+ol[class*="-circle-list"] {
+  list-style: none !important;
+  padding-left: 0;
+  margin: 6pt 0;
+}
+
+ol[class*="-circle-list"] > li {
+  position: relative;
+  padding-left: 26pt;
+  margin: 4pt 0;
+}
+
+ol[class*="-circle-list"] > li::before {
+  position: absolute;
+  left: 0;
+  top: 1pt;
+  width: 20pt;
+  height: 20pt;
+  line-height: 18pt;
+  text-align: center;
+  border: 1pt solid #000;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 9pt;
+  box-sizing: border-box;
+}
+
+ol.en-digits-circle-list { counter-reset: circ-en-digit; }
+ol.en-digits-circle-list > li { counter-increment: circ-en-digit; }
+ol.en-digits-circle-list > li::before { content: counter(circ-en-digit); }
+
+ol.en-letters-circle-list { counter-reset: circ-en-letter; }
+ol.en-letters-circle-list > li { counter-increment: circ-en-letter; }
+ol.en-letters-circle-list > li::before { content: counter(circ-en-letter, en-letters); }
+
+ol.bn-digits-circle-list { counter-reset: circ-bn-digit; }
+ol.bn-digits-circle-list > li { counter-increment: circ-bn-digit; }
+ol.bn-digits-circle-list > li::before { content: counter(circ-bn-digit, bn-digits); }
+
+ol.bn-letters-circle-list { counter-reset: circ-bn-letter; }
+ol.bn-letters-circle-list > li { counter-increment: circ-bn-letter; }
+ol.bn-letters-circle-list > li::before { content: counter(circ-bn-letter, bn-letters); }
+
 li > p { margin: 2pt 0; }
 li > p:first-child,
 ol.bn-digits-list > li > p:first-child,

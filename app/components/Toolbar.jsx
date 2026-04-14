@@ -32,6 +32,10 @@ import {
   Type,
   ALargeSmall,
   Rows3,
+  Circle as CircleIcon,
+  Columns2 as Columns2Icon,
+  LayoutGrid,
+  AlignVerticalSpaceAround,
   Table as TableIcon,
   Grid3x3,
   RowsIcon,
@@ -92,30 +96,77 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
     editor.chain().focus().extendMarkRange("link").setLink({ href: url }).run();
   };
 
-  const toggleOrderedListClass = (className) => {
-    const inList = editor.isActive("orderedList");
-    const current = inList ? editor.getAttributes("orderedList").class : null;
-    if (inList && current === className) {
-      editor.chain().focus().toggleOrderedList().run();
-    } else if (inList) {
-      editor
-        .chain()
-        .focus()
-        .updateAttributes("orderedList", { class: className })
-        .run();
-    } else {
-      editor
-        .chain()
-        .focus()
-        .toggleOrderedList()
-        .updateAttributes("orderedList", { class: className })
-        .run();
-    }
+  const FORMAT_CLASSES = new Set([
+    "bn-digits-list",
+    "bn-letters-list",
+    "en-letters-list",
+    "bn-digits-circle-list",
+    "bn-letters-circle-list",
+    "en-digits-circle-list",
+    "en-letters-circle-list",
+    "bangla-list",
+  ]);
+
+  const rawListClass = editor.isActive("orderedList")
+    ? editor.getAttributes("orderedList").class || ""
+    : "";
+  const listClassParts = rawListClass.split(/\s+/).filter(Boolean);
+  const listFormatClass =
+    listClassParts.find((c) => FORMAT_CLASSES.has(c)) || null;
+  const listLayoutClass =
+    listClassParts.find((c) => /^mcq-grid-\d+$/.test(c)) || null;
+  // Keep back-compat: the existing `listClass` variable now reflects the
+  // numbering-format portion only.
+  const listClass = listFormatClass;
+
+  const buildListClass = (format, layout) =>
+    [format, layout].filter(Boolean).join(" ") || null;
+
+  // Update only the INNERMOST orderedList at cursor position.
+  // Tiptap's built-in updateAttributes walks ancestors and updates every
+  // matching node — which breaks nested lists (outer + inner both get the
+  // same class). We walk depths manually to target only the closest ol.
+  const setInnermostOrderedListClass = (nextClass) => {
+    editor
+      .chain()
+      .focus()
+      .command(({ tr, state }) => {
+        const { $from } = state.selection;
+        for (let depth = $from.depth; depth >= 0; depth--) {
+          const node = $from.node(depth);
+          if (node.type.name === "orderedList") {
+            const pos = $from.before(depth);
+            tr.setNodeMarkup(pos, undefined, {
+              ...node.attrs,
+              class: nextClass || null,
+            });
+            return true;
+          }
+        }
+        return false;
+      })
+      .run();
   };
 
-  const listClass = editor.isActive("orderedList")
-    ? editor.getAttributes("orderedList").class
-    : null;
+  const toggleOrderedListClass = (format) => {
+    const inList = editor.isActive("orderedList");
+    if (inList && listFormatClass === format) {
+      editor.chain().focus().toggleOrderedList().run();
+      return;
+    }
+    if (inList) {
+      setInnermostOrderedListClass(buildListClass(format, listLayoutClass));
+      return;
+    }
+    editor.chain().focus().toggleOrderedList().run();
+    setInnermostOrderedListClass(format);
+  };
+
+  const toggleListLayout = (layout) => {
+    if (!editor.isActive("orderedList")) return;
+    const nextLayout = listLayoutClass === layout ? null : layout;
+    setInnermostOrderedListClass(buildListClass(listFormatClass, nextLayout));
+  };
 
   const FONTS = [
     { label: "Kalpurush", value: "Kalpurush, sans-serif", bangla: true },
@@ -423,6 +474,20 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
         >
           a) b) c) Lettered
         </DropdownItem>
+        <DropdownItem
+          icon={CircleIcon}
+          active={listClass === "en-digits-circle-list"}
+          onClick={() => toggleOrderedListClass("en-digits-circle-list")}
+        >
+          ① ② ③ Circle numbered
+        </DropdownItem>
+        <DropdownItem
+          icon={CircleIcon}
+          active={listClass === "en-letters-circle-list"}
+          onClick={() => toggleOrderedListClass("en-letters-circle-list")}
+        >
+          ⓐ ⓑ ⓒ Circle lettered
+        </DropdownItem>
         <DropdownDivider />
         <DropdownLabel>বাংলা</DropdownLabel>
         <DropdownItem
@@ -438,6 +503,46 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
           onClick={() => toggleOrderedListClass("bn-letters-list")}
         >
           ক) খ) গ) তালিকা
+        </DropdownItem>
+        <DropdownItem
+          icon={CircleIcon}
+          active={listClass === "bn-digits-circle-list"}
+          onClick={() => toggleOrderedListClass("bn-digits-circle-list")}
+        >
+          ⓵ ⓶ ⓷ বাংলা সংখ্যা (বৃত্ত)
+        </DropdownItem>
+        <DropdownItem
+          icon={CircleIcon}
+          active={listClass === "bn-letters-circle-list"}
+          onClick={() => toggleOrderedListClass("bn-letters-circle-list")}
+        >
+          Ⓚ Ⓗ Ⓖ বাংলা অক্ষর (বৃত্ত)
+        </DropdownItem>
+        <DropdownDivider />
+        <DropdownLabel>লেআউট (Layout)</DropdownLabel>
+        <DropdownItem
+          icon={AlignVerticalSpaceAround}
+          active={!listLayoutClass && editor.isActive("orderedList")}
+          disabled={!editor.isActive("orderedList")}
+          onClick={() => toggleListLayout(null)}
+        >
+          উল্লম্ব (Vertical)
+        </DropdownItem>
+        <DropdownItem
+          icon={Columns2Icon}
+          active={listLayoutClass === "mcq-grid-2"}
+          disabled={!editor.isActive("orderedList")}
+          onClick={() => toggleListLayout("mcq-grid-2")}
+        >
+          ২ কলাম গ্রিড (2×2)
+        </DropdownItem>
+        <DropdownItem
+          icon={LayoutGrid}
+          active={listLayoutClass === "mcq-grid-4"}
+          disabled={!editor.isActive("orderedList")}
+          onClick={() => toggleListLayout("mcq-grid-4")}
+        >
+          ১ সারিতে ৪টি (1×4)
         </DropdownItem>
         <DropdownDivider />
         <DropdownItem
