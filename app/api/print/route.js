@@ -332,7 +332,8 @@ table td,
 table th {
   border: 1pt solid #000;
   padding: 4pt 8pt;
-  min-width: 22pt;
+  min-width: 3.50rem;
+  min-height: 4.50rem;
   text-align: center;
   vertical-align: middle;
 }

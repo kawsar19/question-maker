@@ -25,18 +25,35 @@ export function Dropdown({
     const update = () => {
       const rect = btnRef.current.getBoundingClientRect();
       const width = panelRef.current?.offsetWidth || panelWidth;
+      const height = panelRef.current?.offsetHeight || 0;
       let left = align === "right" ? rect.right - width : rect.left;
       const padding = 8;
       if (left + width > window.innerWidth - padding) {
         left = window.innerWidth - width - padding;
       }
       if (left < padding) left = padding;
-      setPos({ top: rect.bottom + 6, left, ready: true });
+
+      const spaceBelow = window.innerHeight - rect.bottom - padding;
+      const spaceAbove = rect.top - padding;
+      const gap = 6;
+      let top;
+      if (height && height > spaceBelow && spaceAbove > spaceBelow) {
+        top = Math.max(padding, rect.top - gap - height);
+      } else {
+        top = rect.bottom + gap;
+        const maxTop = window.innerHeight - padding - height;
+        if (height && top > maxTop) top = Math.max(padding, maxTop);
+      }
+      setPos({ top, left, ready: true });
     };
     update();
+    // Panel height is 0 on the first measure (not yet rendered with content),
+    // so re-measure once after mount to get accurate flip-up positioning.
+    const raf = requestAnimationFrame(update);
     window.addEventListener("scroll", update, true);
     window.addEventListener("resize", update);
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener("scroll", update, true);
       window.removeEventListener("resize", update);
     };

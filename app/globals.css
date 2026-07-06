@@ -584,9 +584,10 @@ ol.bn-letters-circle-list > li::before {
 .tiptap table td,
 .tiptap table th {
   border: 1.5px solid #1f2937;
-  padding: 0.35rem 0.75rem;
-  min-width: 2.25rem;
-  min-height: 1.75rem;
+ 
+  min-width: 3.50rem;
+  min-height: 4.50rem;
+   padding: 4pt 8pt;
   text-align: center;
   vertical-align: middle;
   position: relative;
