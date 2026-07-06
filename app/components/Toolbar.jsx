@@ -65,7 +65,7 @@ function IconBtn({ onClick, active, disabled, title, icon: Icon }) {
       disabled={disabled}
       title={title}
       className={
-        "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md border transition-colors " +
+        "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border transition-colors sm:h-8 sm:w-8 " +
         "disabled:cursor-not-allowed disabled:opacity-40 " +
         "hover:bg-zinc-100 dark:hover:bg-zinc-800 " +
         (active
@@ -248,14 +248,14 @@ export default function Toolbar({ editor, onOpenTemplates, onInsertBlock }) {
         : AlignLeft;
 
   return (
-    <div className="sticky top-0 z-20 flex items-center gap-1 overflow-x-auto border-b border-zinc-200 bg-zinc-50/95 p-1.5 backdrop-blur scrollbar-hide dark:border-zinc-700 dark:bg-zinc-900/85">
+    <div className="sticky top-0 z-20 flex items-center gap-1 overflow-x-auto border-b border-zinc-200 bg-zinc-50/95 p-1.5 backdrop-blur scrollbar-hide touch-pan-x dark:border-zinc-700 dark:bg-zinc-900/85">
       {/* Primary: Templates + Blocks */}
       {onOpenTemplates && (
         <button
           type="button"
           onClick={onOpenTemplates}
           title="প্রি-মেইড প্রশ্ন টেমপ্লেট"
-          className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-blue-600 bg-blue-600 px-2.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+          className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-md border border-blue-600 bg-blue-600 px-2.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-blue-700 sm:h-8"
         >
           <FileText className="h-4 w-4" />
           <span className="hidden sm:inline">টেমপ্লেট</span>

@@ -64,10 +64,16 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Hide horizontal scrollbar on toolbar / dropdowns */
@@ -77,6 +83,12 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Smooth momentum scrolling on touch devices for scroll containers */
+.editor-scroll-area {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 /* ============================================================
@@ -130,6 +142,13 @@ body {
   opacity: 1;
 }
 
+/* Touch devices have no hover — always show the block menu so it's reachable */
+@media (hover: none) {
+  .tiptap .block-wrapper .block-menu {
+    opacity: 1;
+  }
+}
+
 .block-menu-trigger {
   display: inline-flex;
   align-items: center;
@@ -144,6 +163,13 @@ body {
   transition:
     background-color 0.15s,
     color 0.15s;
+}
+
+@media (hover: none) {
+  .block-menu-trigger {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
 
 .block-menu-trigger:hover {
@@ -200,6 +226,12 @@ body {
   cursor: pointer;
   text-align: left;
   transition: background-color 0.15s;
+}
+
+@media (hover: none) {
+  .block-menu-item {
+    padding: 0.6rem 0.6rem;
+  }
 }
 
 .block-menu-item:hover {

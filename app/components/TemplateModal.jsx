@@ -34,20 +34,20 @@ export default function TemplateModal({ open, onClose, onApply }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 sm:p-4"
       onClick={onClose}
     >
       <div
-        className="flex h-[88vh] w-full max-w-6xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-zinc-900"
+        className="flex h-[100dvh] w-full flex-col overflow-hidden bg-white shadow-2xl sm:h-[88vh] sm:max-w-6xl sm:rounded-xl dark:bg-zinc-900"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-zinc-200 px-5 py-3 dark:border-zinc-700">
-          <div>
-            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+        <div className="flex items-center justify-between border-b border-zinc-200 px-3 py-2.5 sm:px-5 sm:py-3 dark:border-zinc-700">
+          <div className="min-w-0">
+            <h2 className="text-base font-semibold text-zinc-900 sm:text-lg dark:text-zinc-50">
               প্রশ্নের টেমপ্লেট
             </h2>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            <p className="hidden text-xs text-zinc-500 sm:block dark:text-zinc-400">
               শ্রেণি অনুযায়ী প্রি-মেইড প্রশ্ন টেমপ্লেট — একটি বেছে নিয়ে এডিটরে লোড করুন
             </p>
           </div>
@@ -55,14 +55,14 @@ export default function TemplateModal({ open, onClose, onApply }) {
             type="button"
             onClick={onClose}
             aria-label="বন্ধ করুন"
-            className="rounded-md border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-zinc-200 bg-white text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
           >
             ✕
           </button>
         </div>
 
         {/* Category tabs */}
-        <div className="flex gap-2 overflow-x-auto border-b border-zinc-200 bg-zinc-50 px-5 py-2 dark:border-zinc-700 dark:bg-zinc-900/60">
+        <div className="flex gap-2 overflow-x-auto border-b border-zinc-200 bg-zinc-50 px-3 py-2 scrollbar-hide sm:px-5 dark:border-zinc-700 dark:bg-zinc-900/60">
           {categories.map((c) => {
             const active = c.id === activeCategoryId;
             return (
@@ -71,7 +71,7 @@ export default function TemplateModal({ open, onClose, onApply }) {
                 type="button"
                 onClick={() => selectCategory(c.id)}
                 className={
-                  "flex shrink-0 items-center gap-2 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors " +
+                  "flex h-9 shrink-0 items-center gap-2 rounded-md border px-3 text-sm font-medium transition-colors " +
                   (active
                     ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
                     : "border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800")
@@ -96,7 +96,7 @@ export default function TemplateModal({ open, onClose, onApply }) {
         {/* Body: list + preview */}
         <div className="flex min-h-0 flex-1 flex-col md:flex-row">
           {/* Template list */}
-          <div className="w-full shrink-0 overflow-y-auto border-b border-zinc-200 p-3 dark:border-zinc-700 md:w-72 md:border-b-0 md:border-r">
+          <div className="max-h-40 w-full shrink-0 overflow-y-auto border-b border-zinc-200 p-2.5 sm:max-h-none sm:p-3 dark:border-zinc-700 md:h-auto md:w-72 md:border-b-0 md:border-r">
             <ul className="flex flex-col gap-1.5">
               {category.templates.map((t) => {
                 const active = t.id === activeTemplateId;
@@ -141,12 +141,12 @@ export default function TemplateModal({ open, onClose, onApply }) {
 
           {/* Preview */}
           <div className="flex min-h-0 flex-1 flex-col">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-200 bg-zinc-50 px-5 py-3 dark:border-zinc-700 dark:bg-zinc-900/60">
-              <div>
-                <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-50 px-3 py-2.5 sm:gap-3 sm:px-5 sm:py-3 dark:border-zinc-700 dark:bg-zinc-900/60">
+              <div className="min-w-0">
+                <div className="truncate text-sm font-semibold text-zinc-900 dark:text-zinc-50">
                   {template.title}
                 </div>
-                <div className="text-xs text-zinc-500 dark:text-zinc-400">
+                <div className="truncate text-xs text-zinc-500 dark:text-zinc-400">
                   {category.name} • {template.subject}
                 </div>
               </div>
@@ -156,12 +156,12 @@ export default function TemplateModal({ open, onClose, onApply }) {
                   onApply(template.html);
                   onClose();
                 }}
-                className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                className="w-full shrink-0 rounded-md bg-blue-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-700 sm:w-auto sm:py-2"
               >
                 এই টেমপ্লেটটি ব্যবহার করুন
               </button>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto bg-white px-6 py-5 dark:bg-zinc-900">
+            <div className="min-h-0 flex-1 overflow-y-auto overflow-x-auto bg-white px-4 py-4 sm:px-6 sm:py-5 dark:bg-zinc-900">
               <div
                 className="tiptap"
                 dangerouslySetInnerHTML={{ __html: template.html }}

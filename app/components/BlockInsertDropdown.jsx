@@ -68,7 +68,7 @@ export default function BlockInsertDropdown({ onInsert }) {
         type="button"
         onClick={() => setOpen((v) => !v)}
         title="প্রশ্ন ব্লক ইনসার্ট করুন"
-        className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-violet-600 bg-violet-600 px-2.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-violet-700"
+        className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-md border border-violet-600 bg-violet-600 px-2.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-violet-700 sm:h-8"
       >
         <Plus className="h-4 w-4" />
         <span className="hidden sm:inline">ব্লক</span>

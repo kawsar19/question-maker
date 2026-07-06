@@ -74,7 +74,7 @@ export function Dropdown({
         title={title}
         className={
           triggerClassName ||
-          "inline-flex shrink-0 items-center gap-0.5 rounded-md border px-2 py-1.5 text-sm font-medium transition-colors " +
+          "inline-flex h-9 shrink-0 items-center gap-0.5 rounded-md border px-2 py-1.5 text-sm font-medium transition-colors sm:h-8 " +
             "hover:bg-zinc-100 dark:hover:bg-zinc-800 " +
             (active
               ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
@@ -102,10 +102,11 @@ export function Dropdown({
               left: pos.left,
               visibility: pos.ready ? "visible" : "hidden",
               minWidth: panelWidth,
+              maxHeight: "min(24rem, calc(100vh - 5rem))",
             }}
             onClick={() => setOpen(false)}
             className={
-              "z-[100] rounded-lg border border-zinc-200 bg-white p-1 shadow-xl dark:border-zinc-700 dark:bg-zinc-900 " +
+              "z-[100] overflow-y-auto rounded-lg border border-zinc-200 bg-white p-1 shadow-xl dark:border-zinc-700 dark:bg-zinc-900 " +
               panelClass
             }
           >

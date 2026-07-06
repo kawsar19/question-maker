@@ -78,7 +78,7 @@ export default function Editor() {
     editorProps: {
       attributes: {
         class:
-          "tiptap prose prose-zinc dark:prose-invert max-w-none min-h-[360px] focus:outline-none px-5 py-4",
+          "tiptap prose prose-zinc dark:prose-invert max-w-none min-h-[360px] focus:outline-none px-3 py-3 sm:px-5 sm:py-4",
       },
     },
     onUpdate: ({ editor }) => {
@@ -139,20 +139,22 @@ export default function Editor() {
 
   return (
     <div className="w-full">
-      <div className="rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
+      <div className="overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
         <Toolbar
           editor={editor}
           onOpenTemplates={() => setTemplateOpen(true)}
           onInsertBlock={insertBlock}
         />
-        <EditorContent editor={editor} />
+        <div className="editor-scroll-area max-h-[65vh] overflow-y-auto overflow-x-auto sm:max-h-[70vh]">
+          <EditorContent editor={editor} />
+        </div>
       </div>
 
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-500 dark:text-zinc-400">
-        <span>{wordCount} শব্দ</span>
-        <div className="flex items-center gap-2">
+      <div className="sticky bottom-0 z-10 mt-3 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-zinc-200 bg-white/95 px-3 py-2 text-sm text-zinc-500 backdrop-blur sm:static sm:border-none sm:bg-transparent sm:px-0 sm:py-0 sm:backdrop-blur-none dark:border-zinc-700 dark:bg-zinc-900/95 dark:text-zinc-400 sm:dark:bg-transparent">
+        <span className="text-xs sm:text-sm">{wordCount} শব্দ</span>
+        <div className="flex flex-wrap items-center gap-2">
           {printError && (
-            <span className="text-xs text-red-600 dark:text-red-400">
+            <span className="w-full text-xs text-red-600 sm:w-auto dark:text-red-400">
               {printError}
             </span>
           )}
@@ -169,7 +171,7 @@ export default function Editor() {
                 <span>{printing ? "তৈরি হচ্ছে…" : "PDF ডাউনলোড"}</span>
               </span>
             }
-            triggerClassName="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-emerald-600 bg-emerald-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
+            triggerClassName="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-emerald-600 bg-emerald-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60 sm:py-1.5"
           >
             <DropdownLabel>লেআউট বেছে নিন</DropdownLabel>
             <DropdownItem
@@ -206,15 +208,12 @@ export default function Editor() {
               const html = editor.getHTML();
               navigator.clipboard?.writeText(html);
             }}
-            className="rounded-md border border-zinc-200 bg-white px-3 py-1.5 font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+            className="rounded-md border border-zinc-200 bg-white px-3 py-2 font-medium text-zinc-700 transition-colors hover:bg-zinc-100 sm:py-1.5 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
           >
             HTML কপি
           </button>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
 
       <TemplateModal
         open={templateOpen}

@@ -336,5 +336,139 @@ export const class1 = {
         <p style="text-align:center;margin-top:1em;">---***---</p>
       `,
     },
+   {
+  id: "c1-math-final-100",
+  title: "গণিত — বার্ষিক পরীক্ষা",
+  subject: "গণিত",
+  html: `
+    <div data-block-wrapper="true">
+      <h3 style="text-align:center;margin-top:0;margin-bottom:0.15em;">[প্রতিষ্ঠানের নাম]</h3>
+      <h2 style="text-align:center;margin-top:0.15em;margin-bottom:0.35em;">বার্ষিক পরীক্ষা – ২০২৬</h2>
+      <p style="text-align:center;margin:0.2em 0;"><strong>শ্রেণি:</strong> ১ম &nbsp;|&nbsp; <strong>বিষয়:</strong> গণিত</p>
+      <p style="display:flex;justify-content:space-between;margin:0.4em 0 0.2em;"><strong>সময়: ২ ঘণ্টা ৩০ মিনিট</strong> <strong>পূর্ণমান: ১০০</strong></p>
+      <p style="margin:0.3em 0;"><strong>শিক্ষার্থীর নাম:</strong> ______________________________ &nbsp;&nbsp; <strong>রোল নং:</strong> __________</p>
+      <hr style="border: 1px solid #ccc; margin: 10px 0;" />
+    </div>
+
+    <div data-block-wrapper="true">
+      <ol class="bn-digits-list" style="padding-left: 20px; line-height: 1.8;">
+        
+        <!-- ১. অংকে লিখ -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>অংকে লিখ (যে কোনো ৫টি):</strong> <span>(২ × ৫ = ১০)</span></p>
+          <div style="display:flex; flex-wrap:wrap; gap: 15px; margin-left: 10px;">
+            <div style="width: 30%;">ক) একান্ন: _________</div>
+            <div style="width: 30%;">খ) পঁয়ষট্টি: _________</div>
+            <div style="width: 30%;">গ) উনআশি: _________</div>
+            <div style="width: 30%;">ঘ) বিরানব্বই: _________</div>
+            <div style="width: 30%;">ঙ) একশত: _________</div>
+            <div style="width: 30%;">চ) সাতাশি: _________</div>
+          </div>
+        </li>
+
+        <!-- ২. কথায় লিখ -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>কথায় লিখ (যে কোনো ৫টি):</strong> <span>(২ × ৫ = ১০)</span></p>
+          <div style="display:flex; flex-wrap:wrap; gap: 15px; margin-left: 10px;">
+            <div style="width: 30%;">ক) ৪৪: _________</div>
+            <div style="width: 30%;">খ) ৫৭: _________</div>
+            <div style="width: 30%;">গ) ৬৯: _________</div>
+            <div style="width: 30%;">ঘ) ৭৫: _________</div>
+            <div style="width: 30%;">ঙ) ৮১: _________</div>
+            <div style="width: 30%;">চ) ৯৮: _________</div>
+          </div>
+        </li>
+
+        <!-- ৩. জোড় ও বিজোড় সংখ্যা -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>নিচের সংখ্যাগুলো থেকে জোড় ও বিজোড় সংখ্যা আলাদা করে লিখ:</strong> <span>(১ × ১০ = ১০)</span></p>
+          <p style="margin-left: 10px; background-color: #f9f9f9; padding: 5px; border-radius: 4px; display: inline-block;"><strong>সংখ্যাগুলো:</strong> ১২, ১৫, ২০, ২৭, ৩৩, ৪০, ৪১, ৪৮, ৫০, ৫৩</p>
+          <div style="margin-top: 10px; margin-left: 10px;">
+            <p><strong>জোড় সংখ্যা:</strong> __________________________________________________________________</p>
+            <p><strong>বিজোড় সংখ্যা:</strong> _________________________________________________________________</p>
+          </div>
+        </li>
+
+        <!-- ৪. ছোট থেকে বড় সাজানো -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>ছোট থেকে বড় এবং বড় থেকে ছোট সাজিয়ে লিখ:</strong> <span>(৫ + ৫ = ১০)</span></p>
+          <div style="margin-left: 10px;">
+            <p>ক) ছোট থেকে বড় সাজাও: <strong>৪২, ১৬, ২৯, ৫৪, ৩৮</strong></p>
+            <p>উত্তর: ______________________________________________________________________</p>
+            <p style="margin-top: 10px;">খ) বড় থেকে ছোট সাজাও: <strong>৬৫, ৮০, ৪৭, ৯২, ৭৫</strong></p>
+            <p>উত্তর: ______________________________________________________________________</p>
+          </div>
+        </li>
+
+        <!-- ৫. খালি ঘর পূরণ কর -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>খালি ঘর পূরণ কর:</strong> <span>(২ × ৫ = ১০)</span></p>
+          <div style="display:flex; flex-wrap:wrap; gap: 15px; margin-left: 10px;">
+            <div style="width: 45%;">ক) ৪ + <span style="display:inline-block; width: 30px; height: 20px; border: 1px solid #333; vertical-align: middle; margin: 0 5px;"></span> = ১০</div>
+            <div style="width: 45%;">খ) ১২ − <span style="display:inline-block; width: 30px; height: 20px; border: 1px solid #333; vertical-align: middle; margin: 0 5px;"></span> = ৭</div>
+            <div style="width: 45%;">গ) ১৫ + ৩ = <span style="display:inline-block; width: 30px; height: 20px; border: 1px solid #333; vertical-align: middle; margin: 0 5px;"></span></div>
+            <div style="width: 45%;">ঘ) ২০ − ১০ = <span style="display:inline-block; width: 30px; height: 20px; border: 1px solid #333; vertical-align: middle; margin: 0 5px;"></span></div>
+            <div style="width: 45%;">ঙ) <span style="display:inline-block; width: 30px; height: 20px; border: 1px solid #333; vertical-align: middle; margin: 0 5px;"></span> + ৬ = ১৩</div>
+          </div>
+        </li>
+
+        <!-- ৬. যোগ কর -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>যোগ কর (যে কোনো ৫টি):</strong> <span>(৩ × ৫ = ১৫)</span></p>
+          <div style="display:flex; flex-wrap:wrap; gap: 15px; margin-left: 10px;">
+            <div style="width: 45%;">ক) ৪ + ৫ = _______</div>
+            <div style="width: 45%;">খ) ১২ + ৬ = _______</div>
+            <div style="width: 45%;">গ) ২৫ + ৪ = _______</div>
+            <div style="width: 45%;">ঘ) ৩০ + ২০ = _______</div>
+            <div style="width: 45%;">ঙ) ৪৩ + ৫ = _______</div>
+            <div style="width: 45%;">চ) ৫১ + ৮ = _______</div>
+          </div>
+        </li>
+
+        <!-- ৭. বিয়োগ কর -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>বিয়োগ কর (যে কোনো ৫টি):</strong> <span>(৩ × ৫ = ১৫)</span></p>
+          <div style="display:flex; flex-wrap:wrap; gap: 15px; margin-left: 10px;">
+            <div style="width: 45%;">ক) ৯ − ৩ = _______</div>
+            <div style="width: 45%;">খ) ১৮ − ৫ = _______</div>
+            <div style="width: 45%;">গ) ২৭ − ৪ = _______</div>
+            <div style="width: 45%;">ঘ) ৪০ − ১০ = _______</div>
+            <div style="width: 45%;">ঙ) ৫৬ − ৪ = _______</div>
+            <div style="width: 45%;">চ) ৬৯ − ৯ = _______</div>
+          </div>
+        </li>
+
+        <!-- ৮. নামতা লিখ -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>নামতা লিখ (যে কোনো ১টি):</strong> <span>(৫ × ১ = ৫)</span></p>
+          <div style="margin-left: 10px;">
+            <span>ক) ৫ এর ঘরের নামতা</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>খ) ৩ এর ঘরের নামতা</span>
+          </div>
+        </li>
+
+        <!-- ৯. ডাকের অংক -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>সমস্যার সমাধান কর (যে কোনো ২টি):</strong> <span>(৭.৫ × ২ = ১৫)</span></p>
+          <div style="margin-left: 10px;">
+            <p style="margin-bottom: 10px;"><strong>ক)</strong> রিমির ৮টি পেন্সিল ছিল। তার বাবা তাকে আরও ৫টি পেন্সিল দিলেন। রিমির এখন মোট কয়টি পেন্সিল হলো?</p>
+            <p style="margin-bottom: 10px;"><strong>খ)</strong> একটি গাছে ১৫টি পাখি বসে ছিল। সেখান থেকে ৬টি পাখি উড়ে গেল। এখন গাছে কয়টি পাখি রইল?</p>
+            <p style="margin-bottom: 10px;"><strong>গ)</strong> আকাশের কাছে ১০টি চকলেট আছে। সুমির কাছে আছে ৭টি চকলেট। তাদের দুইজনের কাছে মোট কয়টি চকলেট আছে?</p>
+          </div>
+        </li>
+
+        <!-- ১০. জ্যামিতি -->
+        <li style="margin-bottom: 20px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 10px 0;"><strong>জ্যামিতি (চিত্রসহ সংজ্ঞা লিখ - যে কোনো ১টি):</strong> <span>(১০ × ১ = ১০)</span></p>
+          <div style="margin-left: 10px;">
+            <span>ক) ত্রিভুজ</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>খ) বৃত্ত</span>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+    <p style="text-align:center;margin-top:2em;">---***---</p>
+  `,
+}
   ],
 };
